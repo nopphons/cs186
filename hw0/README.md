@@ -67,9 +67,9 @@ Clone your personal repository in your home directory (replace `xx` with your lo
     $ cd ~
     $ git clone https://github.com/cs186-spring15/xx.git
 
-Move into your repository and create the file `done.txt`. Register this change with a commit and push it into GitHub's servers:
+Move into the hw0 directory in your repository and create the file `done.txt`. Register this change with a commit and push it into GitHub's servers:
 
-    $ cd xx/
+    $ cd xx/hw0/
     $ touch done.txt
     $ git add done.txt
     $ git commit -m 'created homework file'
