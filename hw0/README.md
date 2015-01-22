@@ -62,9 +62,17 @@ We will grade the last commit you've pushed to `release/<assignment-name>`.
 
 ## An example: completing this assignment
 
-Clone your personal repository in your home directory (replace `xx` with your login letters):
+If you haven't already, initialize the contents of your personal repository by copying over the public course repository:
 
     $ cd ~
+    $ git clone https://github.com/cs186-spring15/course.git
+    $ cd course/
+    $ git remote add personal https://github.com/cs186-spring15/xx.git
+    $ git push personal master
+
+Clone your personal repository in your home directory (replace `xx` with your login letters):
+
+    $ cd ..
     $ git clone https://github.com/cs186-spring15/xx.git
 
 Move into the hw0 directory in your repository and create the file `done.txt`. Register this change with a commit and push it into GitHub's servers:
