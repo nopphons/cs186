@@ -82,7 +82,7 @@ Finally, within your VM download the ebook data [here](https://inst.eecs.berkele
 Move `ebooks/ebooks_full.txt` and `ebooks/ebooks_tiny.txt` into hw1, and  `ebooks/ebooks_full.txt.out` and  `ebooks/ebooks_tiny.txt.out` into hw1/test/.
 
     vagrant@precise64:~$ cd ~/course/hw1
-    vagrant@precise64:~$ wget -O ebooks.zip https://www.dropbox.com/s/tmlaiccd7okac1h/ebooks.zip?dl=1
+    vagrant@precise64:~$ wget -O ebooks.zip https://inst.eecs.berkeley.edu/~cs186-te/ebooks.zip
     vagrant@precise64:~$ unzip ebooks.zip
     vagrant@precise64:~$ mv ebooks/*txt .
     vagrant@precise64:~$ mv ebooks/*.out test
