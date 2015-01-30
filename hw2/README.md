@@ -2,7 +2,9 @@
 
 In this assignment you'll implement UDF (user-defined function) result caching in [Apache Spark](http://spark.apache.org), which is a framework for distributed computing in the mold of MapReduce. This project will illustrate key concepts in data rendezvous and query evaluation, and you'll get some hands-on experience modifying Spark, which is both widely used in the field, and developed right here at Berkeley. In addition, you'll get exposure to Scala, a JVM-based language that is gaining popularity for its clean functional style.
 
-This assignment is due **Tuesday, February 12th at 11:59 PM** and is worth **10% of your final grade**. This project is an excellent opportunity to collaborate, and we'll require that you complete it **in pairs**. ***Please fill out [this form](http://goo.gl/forms/KYtFYc4cUG) by Monday, February 2nd at 11:59pm***
+This assignment is due **Tuesday, February 12th at 11:59 PM** and is worth **10% of your final grade**. This project is an excellent opportunity to collaborate, and we'll require that you complete it **in pairs**. ***Please fill out [this form](http://goo.gl/forms/KYtFYc4cUG) by Monday, February 2nd at 11:59pm***.
+
+Lastly, there is a lot of code in this directory. Please look [here](https://github.com/cs186-spring15/course/tree/master/hw2#fetching-the-code) here to find the directory where the code is located.
 
 ## Assignment tasks
 
@@ -98,7 +100,7 @@ In your, please first clone your group repo.
 where `xxxx` will be your group repo name.
 
 Next, please ensure that you have the correct remotes. Your personal repo might be called `origin` or `personal` or something.
-<pre><code>$ git remote -vv
+<pre><code>$ git remote -v
 origin	https://github.com/cs186-spring15/xx (fetch)
 origin	https://github.com/cs186-spring15/xx (push)
 course	https://github.com/cs186-spring15/course (fetch)
@@ -111,7 +113,7 @@ If you do not have a remote that points to `git@github.com:cs186-spring15/course
 
 <pre><code>$ git pull course master</code></pre>
 
-NOTE: Please do not be overwhelmed by the amount of code that is here. Spark is a big project with a lot of features. The code that we will be touching will be contained within one specific directory: `sql/core/src/main/scala/org/apache/spark/sql/execution/`. (Yes, we know -- it's a mouthful). The tests will all be contained in `sql/core/src/test/scala/org/apache/spark/sql/execution/`. 
+NOTE: Please do not be overwhelmed by the amount of code that is here. Spark is a big project with a lot of features. The code that we will be touching will be contained within one specific directory: `sql/core/src/main/scala/org/apache/spark/sql/execution/`. (Yes, we know -- it's a mouthful). The tests will all be contained in `sql/core/src/test/scala/org/apache/spark/sql/execution/`.
 
 ## Building Spark
 
