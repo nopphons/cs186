@@ -2,7 +2,7 @@
 
 In this assignment you'll implement UDF (user-defined function) result caching in [Apache Spark](http://spark.apache.org), which is a framework for distributed computing in the mold of MapReduce. This project will illustrate key concepts in data rendezvous and query evaluation, and you'll get some hands-on experience modifying Spark, which is both widely used in the field, and developed right here at Berkeley. In addition, you'll get exposure to Scala, a JVM-based language that is gaining popularity for its clean functional style.
 
-This assignment is due **Tuesday, February 12th at 11:59 PM** and is worth **10% of your final grade**. This project is an excellent opportunity to collaborate, and we'll require that you complete it **in pairs**. ***Please fill out [this form](http://goo.gl/forms/KYtFYc4cUG) by Monday, February 2nd at 11:59pm***.
+This assignment is due **Thursday, February 12th at 11:59 PM** and is worth **10% of your final grade**. This project is an excellent opportunity to collaborate, and we'll require that you complete it **in pairs**. ***Please fill out [this form](http://goo.gl/forms/KYtFYc4cUG) by Monday, February 2nd at 11:59pm***.
 
 Lastly, there is a lot of code in this directory. Please look [here](https://github.com/cs186-spring15/course/tree/master/hw2#fetching-the-code) here to find the directory where the code is located.
 
@@ -47,7 +47,7 @@ We will be holding a language workshop on Scala at some point. Stay tuned for an
 
 User-defined functions allow developers to define and exploit custom operations within expressions.  Imagine, for example, that you have a product catalog that includes photos of the product packaging.  You may want to register a user-defined function `extract_text` that calls an OCR algorithm and returns the text in an image, so that you can get queryable information out of the photos.  In SQL, you could imagine a query like this:
 	
-	SELECT P.name, P. manufacturer, P.price, extract_text(P.image), 
+	SELECT P.name, P.manufacturer, P.price, extract_text(P.image), 
 	  FROM Products P;
 	 
 The ability to register UDFs is very powerful -- it essentially turns your data processing framework into a general distributed computing framework.  But UDFs can often introduce performance bottlenecks, especially as we run them over millions of data items. 
@@ -92,7 +92,7 @@ When you're ready to get the update, run `vagrant box update`.  Your VM should n
 
 ### Ensuring you have the correct remotes
 
-In your, please first clone your group repo.
+In your VM, please first clone your group repo.
 
 <pre><code>git clone https://github.com/cs186-spring15/xxxx.git
 </code></pre>
@@ -156,7 +156,7 @@ Hint: Think carefully about why these methods might be a part of the Utils
 ## Disk-Partitioned UDF Caching
 
 Now comes the moment of truth! We've implemented disk-based hash partitioning, and we've implemented in-memory UDF caching -- what is sometimes called [memoization](http://en.wikipedia.org/wiki/Memoization). Memoization is very powerful tool in many contexts, but here in databases-land, we deal with larger amounts of data than memoization can handle. If we have more unique values than can fit in an in-memory cache, our performance will rapidly degrade. 
-Thus, we fall back to the time-honored databases tradition of divide-and-conquer. If our data does not fit in memory, then we can partition it to disk once, read one partition in at a time (think about why this works (hint: rendezvous!)), and perform UDF caching and evaulation one partition at a time. 
+Thus, we fall back to the time-honored databases tradition of divide-and-conquer. If our data does not fit in memory, then we can partition it to disk once, read one partition in at a time (think about why this works (hint: rendezvous!)), and perform UDF caching, evaluating one partition at a time. 
 
 ### Task 4: Implementing `PartitionProject`
 
@@ -174,7 +174,7 @@ One of Spark's main selling points is that it is "in-memory". What they mean is 
 
 We have provided you some sample tests in `DiskPartitionSuite.scala`, `DiskHasedRelationSuite.scala`, `CS186UtilsSuite.scala` and `ProjectSuite.scala`. These tests can guide you as you complete this project. However, keep in mind that they are *not* comprehensive, and you are well advised to write your own tests to catch bugs. Hopefully, you can use these tests as models to generate your own tests. 
 
-In order to run our tests, we have provided a simple Makefile. In order to run the tests for task 1, run `make t1`. Correspndingly for task, run `make t2`, and the same for all other tests. `make all` will run all the tests. 
+In order to run our tests, we have provided a simple Makefile. In order to run the tests for task 1, run `make t1`. Correspondingly for task, run `make t2`, and the same for all other tests. `make all` will run all the tests. 
 
 ### Assignment autograder
 
