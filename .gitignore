@@ -1,0 +1,8 @@
+*target/
+*.cache
+*.class
+hw2/project/project/target/
+spark-skeleton
+.idea
+*.iml
+lib_managed
