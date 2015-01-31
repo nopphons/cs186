@@ -82,11 +82,17 @@ There are some potentially confusing differences between the terminology we use 
 
 ## Updating your VM
 
-As you can imagine, there are a number of dependencies and tools that you might be using while working on Spark. We have updated the VM to have the tools that you are going to need in order to complete this project. The next time you run `vagrant up`, you should get a notice that a newer box is available. 
+As you can imagine, there are a number of dependencies and tools that you might be using while working on Spark. We have updated the VM image to have the tools that you are going to need in order to complete this project.
 
-**NOTE**: When you choose to update your box, the update could wipe out things you had in there previously!  Be sure to move anything you care about out of your box, e.g. by doing a git push or by copying relevant things to the [synced folder /vagrant](https://docs.vagrantup.com/v2/getting-started/synced_folders.html) within the VM.
+Follow these instructions to update your VM:
 
-When you're ready to get the update, run `vagrant box update`.  Your VM should now be ready to build and run Spark.  (We also tossed in emacs and vim this time for good measure.)
+* First, move anything you care about out of your box, e.g. by doing a git push or by copying relevant things to the [synced folder /vagrant](https://docs.vagrantup.com/v2/getting-started/synced_folders.html) within the VM. *The update will wipe out any other files you had in there previously!*
+
+* From the directory with your `Vagrantfile`, run `vagrant box update` to download the updated box to your machine.
+
+* Run `vagrant destroy` followed by `vagrant up`
+
+* You can now `vagrant ssh` and your VM should be ready to build and run Spark.  (We also tossed in emacs and vim this time for good measure.)
 
 ## Pulling the framework
 
