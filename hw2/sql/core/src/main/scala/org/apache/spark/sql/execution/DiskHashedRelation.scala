@@ -93,7 +93,7 @@ private[sql] class DiskPartition (
    * If this partition has been closed, this method returns an Iterator of all the
    * data that was written to disk by this partition.
    *
-   * @return the [[JavaArrayList]] of the data
+   * @return the [[Iterator]] of the data
    */
   def getData(): Iterator[Row] = {
     if (!inputClosed) {
