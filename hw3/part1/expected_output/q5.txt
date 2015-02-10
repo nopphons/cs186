@@ -1,0 +1,198 @@
+                                           name                                           | total_pac_donations 
+------------------------------------------------------------------------------------------+---------------------
+ ACTBLUE                                                                                  |             -402.00
+ ADRIAN SMITH FOR CONGRESS                                                                |             1000.00
+ AIMEE BELGARD FOR CONGRESS                                                               |              500.00
+ ALASKA DEMOCRATIC PARTY                                                                  |             5000.00
+ ALEX SINK FOR CONGRESS                                                                   |              450.00
+ ALLIANCE FOR A BETTER MINNESOTA FEDERAL PAC                                              |            70575.00
+ AMERICA VOTES ACTION FUND                                                                |           605000.00
+ AMERICAN BRIDGE 21ST CENTURY                                                             |           660000.00
+ AMERICAN CROSSROADS                                                                      |           644000.00
+ AMERICAN DEFENSE AND MILITARY PAC (ADAM PAC)                                             |             5000.00
+ AMERICAN DENTAL ASSOCIATION INDEPENDENT EXPENDITURES COMMITTEE                           |           297000.00
+ AMERICAN FUTURE FUND POLITICAL ACTION                                                    |           325000.00
+ AMERICAN HEARTLAND PAC                                                                   |             5000.00
+ AMERICAN UNITY PAC INC                                                                   |            50000.00
+ AMERICANS FOR GROWTH, OPPORTUNITY AND PROSPERITY, INC.                                   |             7326.00
+ AMERICANS FOR LIBERTY PAC                                                                |              486.00
+ AMERICANS FOR RESPONSIBLE SOLUTIONS-PAC                                                  |            65018.00
+ AMERIPAC: THE FUND FOR A GREATER AMERICA                                                 |           535620.00
+ AMI BERA FOR CONGRESS                                                                    |             1500.00
+ ANN CLEMMER FOR CONGRESS                                                                 |             3000.00
+ ANN WAGNER FOR CONGRESS                                                                  |             1500.00
+ ARIZONA GRASSROOTS ACTION PAC                                                            |            10000.00
+ BATTLE FOR CONGRESS                                                                      |            15584.00
+ BATTLEGROUND TEXAS                                                                       |           105400.00
+ BIT PAC                                                                                  |             9584.00
+ BLUE AMERICA PAC INDEPENDENT EXPENDITURE COMMITTEE                                       |            22000.00
+ BLUMENAUER FOR CONGRESS                                                                  |              500.00
+ BOEHNER FOR SPEAKER                                                                      |            11000.00
+ BONNIE WATSON COLEMAN FOR CONGRESS                                                       |             1000.00
+ BRADY FOR CONGRESS                                                                       |             2850.00
+ BRYAN SMITH FOR CONGRESS INC                                                             |           109470.00
+ BUILD AMERICA PAC                                                                        |              500.00
+ CAIN FOR CONGRESS                                                                        |             3100.00
+ CAMPAIGN FOR JOBS AND OPPORTUNITY                                                        |            21000.00
+ CARL SCIORTINO COMMITTEE                                                                 |             4100.00
+ CARLOS CURBELO CONGRESS                                                                  |             8000.00
+ CAROL SHEA-PORTER FOR CONGRESS                                                           |              250.00
+ CASTRO FOR CONGRESS                                                                      |             1250.00
+ CENTER FORWARD COMMITTEE                                                                 |           200000.00
+ CHANGE CAMPAIGN SUPER PAC                                                                |              218.00
+ CHRIS GIBSON FOR CONGRESS                                                                |             2000.00
+ CITIZENS AND PUBLIC SAFETY PROPONENTS FOR TRUTH PAC                                      |            26000.00
+ CITIZENS FOR PROSPERITY IN AMERICA TODAY PAC                                             |            18500.00
+ CITIZENS FOR STRENGTH AND SECURITY PAC                                                   |            50000.00
+ CLINT DIDIER FOR CONGRESS                                                                |             2000.00
+ COALITION FOR OHIO'S FUTURE                                                              |            35000.00
+ COMMITTEE FOR ECONOMIC GROWTH AND SOCIAL JUSTICE                                         |            11000.00
+ COMMITTEE TO ELECT AN INDEPENDENT SENATE                                                 |          1320000.00
+ CONGRESSIONAL LEADERSHIP FUND                                                            |           407500.00
+ CONNECTICUT'S FUTURE PAC INC                                                             |             5292.00
+ CONSERVATIVE OPPORTUNITIES FOR A NEW AMERICA PAC                                         |             2500.00
+ CONSERVATIVE VICTORY PROJECT                                                             |            19227.00
+ CONSTITUTIONAL RIGHTS PAC                                                                |              948.00
+ COOPER FOR CONGRESS                                                                      |             -500.00
+ COOPERATIVE OF AMERICAN PHYSICIANS IE COMMITTEE                                          |            34000.00
+ CRA LEADERSHIP PAC                                                                       |            14165.00
+ DAVIS FOR CONGRESS/FRIENDS OF DAVIS                                                      |             1500.00
+ DAWG PAC - DEMOCRATS AGAINST WASTE IN GOVERNMENT                                         |             5000.00
+ DAYLIN FOR CONGRESS                                                                      |              200.00
+ DEFAZIO FOR CONGRESS                                                                     |             2000.00
+ DEFENDING MAIN STREET SUPERPAC INC                                                       |          1662225.00
+ DEMOCRATIC CONGRESSIONAL CAMPAIGN COMMITTEE                                              |          2717576.00
+ DEMOCRATIC PARTY OF THE SAN FERNANDO VALLEY                                              |             1075.00
+ DEMOCRATS WIN SEATS (DWS PAC)                                                            |            24000.00
+ DETROIT FORWARD-FEDERAL                                                                  |            25000.00
+ EMILY'S LIST                                                                             |              301.00
+ EMPOWER NEBRASKA                                                                         |             2500.00
+ ENGAGE AMERICA ACTION                                                                    |            85200.00
+ ENGAGE NEVADA ACTION                                                                     |            50000.00
+ ENVIRONMENTAL MAJORITY                                                                   |             5955.00
+ EVERY VOICE ACTION                                                                       |            35000.00
+ FAA MANAGERS ASSOCIATION INC. PAC                                                        |             2000.00
+ FAIR SHARE ACTION                                                                        |           851925.00
+ FEARLESS PAC                                                                             |             4500.00
+ FORWARD MASSACHUSETTS                                                                    |             3250.00
+ FRATERNITY & SORORITY POLITICAL ACTION COMMITTEE                                         |             1000.00
+ FREEDOM PIONEERS ACTION NETWORK                                                          |            10000.00
+ FRIENDS OF CLYDE HOLLOWAY FOR CONGRESS                                                   |             1000.00
+ FRIENDS OF CONGRESSMAN STEVE STOCKMAN                                                    |             2600.00
+ FRIENDS OF JOE HECK                                                                      |             5500.00
+ FRIENDS OF KEVAN ABRAHAMS                                                                |             3000.00
+ FRIENDS OF NAN HAYWORTH                                                                  |             2400.00
+ FRIENDS OF WESLEY REED                                                                   |            11950.00
+ FUND FOR LOUISIANA'S FUTURE; THE                                                         |             7500.00
+ GEORGIA ONE PAC                                                                          |            10000.00
+ GROW NC STRONG INC                                                                       |           170000.00
+ GUTS POLITICAL ACTION COMMITTEE A/K/A TRUE BLUE DEMOCRATS                                |               90.00
+ HAWAII MEDICAL POLITICAL ACTION COMMITTEE                                                |             4200.00
+ HERRING FOR CONGRESS                                                                     |             2600.00
+ HOUSE MAJORITY PAC                                                                       |          7632548.00
+ HOUSE SENATE VICTORY FUND                                                                |           342200.00
+ HUIZENGA FOR CONGRESS                                                                    |             1500.00
+ HUNTER ACTION FUND (HAF)                                                                 |             1000.00
+ IDAHO STATE DEMOCRATIC PARTY                                                             |             3682.00
+ INDIANA STATE MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE                             |            31797.00
+ INDIVIDUALS DEDICATED TO ETHICS AND SCIENCE PAC                                          |             1000.00
+ IOWA DEMOCRATIC PARTY                                                                    |            16800.00
+ JAN PAC                                                                                  |            48000.00
+ JENNIFER GARRISON FOR CONGRESS                                                           |             1500.00
+ JOBS, OPPORTUNITIES AND EDUCATION PAC (JOE-PAC)                                          |           183000.00
+ JOHN BOLTON SUPER PAC                                                                    |            10000.00
+ KANSAS AG COMMUNITIES COALITION                                                          |             2000.00
+ KENTUCKIANS FOR STRONG LEADERSHIP                                                        |            40000.00
+ KPMG PARTNERS/PRINCIPALS AND EMPLOYEES PAC                                               |             2500.00
+ KURT SCHRADER FOR CONGRESS                                                               |             1000.00
+ LATINO VICTORY PAC                                                                       |           100000.00
+ LEADERSHIP, OPPORTUNITY, INNOVATION SERVICE PAC - LOIS PAC                               |             2000.00
+ LEAGUE OF CONSERVATION VOTERS ACTION FUND                                                |            54600.00
+ LEAGUE OF CONSERVATION VOTERS VICTORY FUND                                               |           308000.00
+ LEGACY POLITICAL FUND                                                                    |              750.00
+ LIUNA BUILDING AMERICA                                                                   |           475000.00
+ LOS ANGELES COUNTY DEMOCRATIC CENTRAL COMMITTEE                                          |              500.00
+ LOUIE GOHMERT FOR CONGRESS COMMITTEE                                                     |             1000.00
+ LUNCH PAIL REPUBLICANS INDEPENDENT EXPENDITURE ONLY COMMITTEE                            |             9000.00
+ MAYDAY PAC                                                                               |           160519.00
+ MICHAEL GRIMM FOR CONGRESS                                                               |             1000.00
+ MICHIGAN DEMOCRATIC STATE CENTRAL COMMITEE                                               |            95000.00
+ MIKE HONDA FOR CONGRESS                                                                  |             2750.00
+ MINNESOTA DEMOCRATIC-FARMER-LABOR PARTY                                                  |            43821.00
+ MISSISSIPPI CONSERVATIVES                                                                |           548193.00
+ MORTGAGE BANKERS ASSOCIATION POLITICAL ACTION COMMITTEE (MORPAC)                         |             2000.00
+ MOULTON FOR CONGRESS                                                                     |             1000.00
+ MOWRER FOR IOWA                                                                          |             2400.00
+ NARRAGANSETT BAY PAC                                                                     |             2500.00
+ NATIONAL ORGANIZATION FOR MARRIAGE VICTORY FUND                                          |             2407.00
+ NEA ADVOCACY FUND                                                                        |          2000000.00
+ NEBRASKA MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE                                  |             2550.00
+ NEVADA MEDICAL ASSOCIATION POLITICAL ACTION COMMITTEE (NEMPAC)                           |             2600.00
+ NEW DEMOCRAT COALITION PAC                                                               |           466250.00
+ NEW HAMPSHIRE PRIORITIES                                                                 |            65000.00
+ NEW JERSEY DEMOCRATIC STATE COMMITTEE                                                    |              943.00
+ NEW REPUBLICAN.ORG                                                                       |             5000.00
+ NINETY NINE PERCENT; THE                                                                 |            77000.00
+ NOLAN FOR CONGRESS VOLUNTEER COMMITTEE                                                   |             2050.00
+ NORTH CAROLINA DEMOCRATIC PARTY - FEDERAL                                                |            10000.00
+ OCEAN CHAMPIONS                                                                          |             5000.00
+ OCEAN CHAMPIONS POLITICAL ACTION COMMITTEE                                               |             3000.00
+ OKLAHOMA FORWARD PAC                                                                     |            47940.00
+ OLSON FOR CONGRESS COMMITTEE                                                             |             1000.00
+ OPPORTUNITY ALLIANCE PAC                                                                 |            10000.00
+ PAC TO THE FUTURE                                                                        |             6000.00
+ PATRIOT MAJORITY PAC                                                                     |            16250.00
+ PEOPLE FOR ENTERPRISE TRADE AND ECONOMIC GROWTH (PETE PAC)                               |             2500.00
+ PERSON TO PERSON PAC                                                                     |           409500.00
+ PETE AGUILAR FOR CONGRESS                                                                |              750.00
+ PETE SESSIONS FOR CONGRESS                                                               |           320533.00
+ PLANNED PARENTHOOD VOTES                                                                 |            27000.00
+ PRINCIPLED LEADERSHIP FUND                                                               |              250.00
+ PRIORITIES FOR IOWA POLITICAL FUND                                                       |            25000.00
+ PROGRESSIVE USA VOTERS                                                                   |            46500.00
+ PROGRESSIVES UNITED POLITICAL ACTION COMMITTEE                                           |              250.00
+ PROJECTXXACT                                                                             |              250.00
+ PROLIANCE SURGEONS POLITICAL ACTION COMMITTE                                             |             5000.00
+ PROTECTING CHOICE IN CALIFORNIA A PROJECT OF PLANNED PARENTHOOD AFFILIATES OF CALIFORNIA |           192705.00
+ PUT ALASKA FIRST                                                                         |         10083500.00
+ R MAJORITY PAC                                                                           |            50000.00
+ READY FOR HILLARY PAC                                                                    |            73000.00
+ RECCHIA FOR CONGRESS                                                                     |              333.00
+ RESTORE OUR REPUBLIC                                                                     |             7500.00
+ SCOTT PETERS FOR CONGRESS                                                                |              500.00
+ SEAN PATRICK MALONEY FOR CONGRESS                                                        |             1000.00
+ SENATE CONSERVATIVES ACTION                                                              |           288579.00
+ SENATE MAJORITY PAC                                                                      |         12781613.00
+ SIRES FOR CONGRESS                                                                       |             1000.00
+ SOUTH FORWARD IE PAC                                                                     |             7800.00
+ SPECIAL OPERATIONS FOR AMERICA                                                           |             9000.00
+ STATE CONSERVATIVE REFORM ACTION PAC (SCRAP)                                             |            10000.00
+ SUPPORTING HOUSE PROBLEM SOLVERS - SHP PAC                                               |             5000.00
+ SUSAN B ANTHONY LIST INC. CANDIDATE FUND                                                 |            15000.00
+ TEAM (TEAMSTERS EDUCATION AND MOBILIZATION)                                              |            25000.00
+ TEXAS DEMOCRATIC PARTY                                                                   |                0.00
+ THE AMERICAN WORKER, INC                                                                 |            60000.00
+ THE REAL CONSERVATIVES NATIONAL COMMITTEE                                                |            40000.00
+ TIBERI FOR CONGRESS                                                                      |             1000.00
+ TIMMERMAN FOR CONGRESS COMMITTEE                                                         |             2000.00
+ UNITED MINE WORKERS OF AMERICA POWER PAC                                                 |            10000.00
+ UNITED WORKERS PAC                                                                       |             2271.00
+ UTILITY WORKERS UNION OF AMERICA POLITICAL-LEGISLATIVE EDUCATION FUND                    |             5000.00
+ VAN HOLLEN VICTORY FUND                                                                  |              500.00
+ VERMONT STATE DEMOCRATIC FEDERAL CAMPAIGN COMMITTEE                                      |              100.00
+ VIRGINIA PROGRESS PAC                                                                    |           305000.00
+ VOTE 2 REDUCE DEBT (V2RD)                                                                |             5278.00
+ VOTESANE PAC                                                                             |            21000.00
+ WALLACE FOR ILLINOIS                                                                     |              500.00
+ WELLS GRIFFITH FOR CONGRESS                                                              |              500.00
+ WEST MAIN STREET VALUES PAC INC                                                          |            75000.00
+ WIN MINNESOTA FEDERAL PAC                                                                |           305000.00
+ WOMEN SPEAK OUT PAC                                                                      |            70000.00
+ WOMEN VOTE!                                                                              |          1661520.00
+ WORKERS' VOICE                                                                           |          4012550.00
+ WORKING AMERICA                                                                          |          2460000.00
+ WORKING FOR US POLITICAL ACTION COMMITTEE INC                                            |             4000.00
+ YOUNG DEMOCRATS OF AMERICA POLITICAL ACTION COMMITTEE                                    |             1750.00
+ ZP ACTION                                                                                |              640.00
+(194 rows)
+

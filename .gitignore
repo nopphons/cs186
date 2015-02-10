@@ -6,3 +6,9 @@ spark-skeleton
 .idea
 *.iml
 lib_managed
+
+hw3/part1/data/
+hw3/part1/diffs/
+hw3/part1/your_output/
+hw3/part1/hw3_fec_data.zip
+*.pyc
