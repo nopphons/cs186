@@ -100,15 +100,15 @@ Follow these instructions to update your VM:
 
 In your VM, please first clone your group repo.
 
-<pre><code>git clone https://github.com/cs186-spring15/xxxx.git
+<pre><code>git clone https://github.com/cs186-spring15/group-xxx.git
 </code></pre>
 
 where `xxxx` will be your group repo name.
 
-Next, please ensure that you have the correct remotes. Your personal repo might be called `origin` or `personal` or something.
+Next, please ensure that you have the correct remotes. Your group repo might be called `origin` or `group` or something.
 <pre><code>$ git remote -v
-origin	https://github.com/cs186-spring15/xx (fetch)
-origin	https://github.com/cs186-spring15/xx (push)
+origin	https://github.com/cs186-spring15/group-xxx (fetch)
+origin	https://github.com/cs186-spring15/group-xxx (push)
 course	https://github.com/cs186-spring15/course (fetch)
 course	https://github.com/cs186-spring15/course (push)
 </code></pre>
@@ -184,7 +184,7 @@ In order to run our tests, we have provided a simple Makefile. In order to run t
 
 ### Assignment autograder
 
-We will provide an autograder on this assignment. To run the autograder on your assignment, push a branch called `ag/hw2` to your personal repository. Keep in mind that you must still submit this assignment by pushing a branch called `release/hw2`: **we will not grade submissions to the autograder!**
+We will provide an autograder on this assignment. To run the autograder on your assignment, push a branch called `ag/hw2` to your group repository. Keep in mind that you must still submit this assignment by pushing a branch called `release/hw2`: **we will not grade submissions to the autograder!**
 
     $ git checkout -b ag/hw2
     $ git push origin ag/hw2
