@@ -189,6 +189,10 @@ We will provide an autograder on this assignment. To run the autograder on your 
     $ git checkout -b ag/hw2
     $ git push origin ag/hw2
 
-Our machines will e-mail you the results of the autograder within a few minutes. **Please note that the autograder is not yet set up. We will aim to have it running by early next week.**
+Our machines will e-mail you the results of the autograder within an hour. If you do not receive a response after an hour, please *first* double-check that all your files are in the right place and that you pushed a commit to `ag/hw2`, and *then* notify us that you haven't received a response.
+
+### Assignment submission
+
+To submit your assignment, as before, push a branch containing the commit you want us to grade to `release/hw2`. This is separate from the autograder; pushing a commit here will not trigger the autograder, and vice-versa.
 
 Good luck!
