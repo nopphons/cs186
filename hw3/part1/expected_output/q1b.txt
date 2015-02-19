@@ -1,5 +1,8 @@
     id     |                                           name                                            |   amount   
 -----------+-------------------------------------------------------------------------------------------+------------
+ C00000935 | Adelstein,Liston, LLC                                                                     |   86900.00
+ C00000935 | Adelstein,Liston, LLC                                                                     |   86900.00
+ C00000935 | Adelstein,Liston, LLC                                                                     |   86900.00
  C00000935 | ADELSTEIN,LISTON, LLC                                                                     |    9150.00
  C00000935 | ADELSTEIN,LISTON, LLC                                                                     |    9200.00
  C00000935 | ADELSTEIN,LISTON, LLC                                                                     |    9800.00
@@ -56,11 +59,9 @@
  C00000935 | AKPD MESSAGE AND MEDIA, LLC                                                               |   17765.00
  C00000935 | AKPD MESSAGE AND MEDIA, LLC                                                               |   19408.00
  C00000935 | AKPD MESSAGE AND MEDIA, LLC                                                               |   19814.00
- C00000935 | Adelstein,Liston, LLC                                                                     |   86900.00
- C00000935 | Adelstein,Liston, LLC                                                                     |   86900.00
- C00000935 | Adelstein,Liston, LLC                                                                     |   86900.00
  C00000935 | Angerholzer Broz Consulting, LLC                                                          |    6124.00
  C00000935 | Anzalone Liszt Research, Inc.                                                             |   10000.00
+ C00000935 | BlueWest Media                                                                            |   81300.00
  C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |    5420.00
  C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |    5500.00
  C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |    6000.00
@@ -245,15 +246,14 @@
  C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |   55752.00
  C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |   57114.00
  C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |   65000.00
- C00000935 | BlueWest Media                                                                            |   81300.00
  C00000935 | Buying Time, LLC                                                                          |   81900.00
  C00000935 | Buying Time, LLC                                                                          |   85900.00
- C00000935 | CONVERSANT, INC.                                                                          |   35000.00
  C00000935 | Canal Partners Media, LLC                                                                 |   80461.00
  C00000935 | Canal Partners Media, LLC                                                                 |   85900.00
  C00000935 | Canal Partners Media, LLC                                                                 |   86000.00
  C00000935 | Canal Partners Media, LLC                                                                 |   86900.00
  C00000935 | Canal Partners Media, LLC                                                                 |   94400.00
+ C00000935 | CONVERSANT, INC.                                                                          |   35000.00
  C00000935 | DAVID DIXON MEDIA GROUP                                                                   |    8234.00
  C00000935 | DAVID DIXON MEDIA GROUP                                                                   |   10233.00
  C00000935 | DAVID DIXON MEDIA GROUP                                                                   |   11345.00
@@ -610,6 +610,9 @@
  C00000935 | GREAT AMERICAN MEDIA                                                                      | 1236950.00
  C00000935 | Gum Spirits Productions DBA CD2 Consul                                                    |   85900.00
  C00000935 | Joe Trippi & Associates, Inc                                                              |   86900.00
+ C00000935 | Main Street Communications LLC                                                            |   79900.00
+ C00000935 | Mundy Katowitz Media, Inc                                                                 |   86900.00
+ C00000935 | Mundy Katowitz Media, Inc                                                                 |   86900.00
  C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |    5349.00
  C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |    5633.00
  C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |    5823.00
@@ -636,9 +639,6 @@
  C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |   16655.00
  C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |   28231.00
  C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |   47635.00
- C00000935 | Main Street Communications LLC                                                            |   79900.00
- C00000935 | Mundy Katowitz Media, Inc                                                                 |   86900.00
- C00000935 | Mundy Katowitz Media, Inc                                                                 |   86900.00
  C00000935 | New Partners Teleservices                                                                 |    6832.00
  C00000935 | New Partners Teleservices                                                                 |    6972.00
  C00000935 | New Partners Teleservices                                                                 |    7175.00
@@ -701,6 +701,10 @@
  C00000935 | RALSTON LAPP MEDIA, LLC JOHN LAPP                                                         |   12282.00
  C00000935 | RALSTON LAPP MEDIA, LLC JOHN LAPP                                                         |   12348.00
  C00000935 | RALSTON LAPP MEDIA, LLC JOHN LAPP                                                         |   14303.00
+ C00000935 | Screen Strategies Media, LLC                                                              |   80080.00
+ C00000935 | Screen Strategies Media, LLC                                                              |   82400.00
+ C00000935 | Screen Strategies Media, LLC                                                              |   84600.00
+ C00000935 | Screen Strategies Media, LLC                                                              |   85960.00
  C00000935 | SHORR HOLDING COMPANY                                                                     |    7545.00
  C00000935 | SHORR HOLDING COMPANY                                                                     |    9103.00
  C00000935 | SHORR HOLDING COMPANY                                                                     |    9119.00
@@ -730,6 +734,8 @@
  C00000935 | SHORR HOLDING COMPANY SHORR JOHNSON MAGNUS                                                |   21688.00
  C00000935 | SKDKnickerbocker LLC                                                                      |   79059.00
  C00000935 | SKDKnickerbocker LLC                                                                      |   86900.00
+ C00000935 | Snyder Pickerill Media  Group, LLC                                                        |   46937.00
+ C00000935 | Snyder Pickerill Media  Group, LLC                                                        |   47462.00
  C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            |    5061.00
  C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            |    5061.00
  C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            |    6016.00
@@ -742,17 +748,22 @@
  C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            |   18478.00
  C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            |   18478.00
  C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            |   26010.00
- C00000935 | Screen Strategies Media, LLC                                                              |   80080.00
- C00000935 | Screen Strategies Media, LLC                                                              |   82400.00
- C00000935 | Screen Strategies Media, LLC                                                              |   84600.00
- C00000935 | Screen Strategies Media, LLC                                                              |   85960.00
- C00000935 | Snyder Pickerill Media  Group, LLC                                                        |   46937.00
- C00000935 | Snyder Pickerill Media  Group, LLC                                                        |   47462.00
+ C00000935 | The Mellman Group                                                                         |   10500.00
+ C00000935 | The Mellman Group                                                                         |   12250.00
+ C00000935 | The Mellman Group                                                                         |   12250.00
+ C00000935 | The Mellman Group                                                                         |   15900.00
+ C00000935 | The Mellman Group                                                                         |   31000.00
  C00000935 | THE PIVOT GROUP, INC.                                                                     |    5110.00
  C00000935 | THE PIVOT GROUP, INC.                                                                     |    5110.00
  C00000935 | THE PIVOT GROUP, INC.                                                                     |   12269.00
  C00000935 | THE PIVOT GROUP, INC.                                                                     |   12284.00
  C00000935 | THE PIVOT GROUP, INC.                                                                     |   12284.00
+ C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5403.00
+ C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5803.00
+ C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5942.00
+ C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5957.00
+ C00000935 | The Sexton Group Public Affairs, LLC                                                      |    6382.00
+ C00000935 | The Sexton Group Public Affairs, LLC                                                      |   10919.00
  C00000935 | THREE POINT MEDIA, LLC                                                                    |    5418.00
  C00000935 | THREE POINT MEDIA, LLC                                                                    |    5836.00
  C00000935 | THREE POINT MEDIA, LLC                                                                    |    6001.00
@@ -789,19 +800,8 @@
  C00000935 | THREE POINT MEDIA, LLC                                                                    |   17195.00
  C00000935 | THREE POINT MEDIA, LLC                                                                    |   18718.00
  C00000935 | THREE POINT MEDIA, LLC                                                                    |   31020.00
- C00000935 | The Mellman Group                                                                         |   10500.00
- C00000935 | The Mellman Group                                                                         |   12250.00
- C00000935 | The Mellman Group                                                                         |   12250.00
- C00000935 | The Mellman Group                                                                         |   15900.00
- C00000935 | The Mellman Group                                                                         |   31000.00
- C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5403.00
- C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5803.00
- C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5942.00
- C00000935 | The Sexton Group Public Affairs, LLC                                                      |    5957.00
- C00000935 | The Sexton Group Public Affairs, LLC                                                      |    6382.00
- C00000935 | The Sexton Group Public Affairs, LLC                                                      |   10919.00
- C00000935 | VALUECLICK, INC DBA DOTOMI                                                                |   10714.00
  C00000935 | VALUECLICK, INC.                                                                          |   16428.00
+ C00000935 | VALUECLICK, INC DBA DOTOMI                                                                |   10714.00
  C00002840 | BUDGET SIGNS & SPECIALTIES                                                                |    6971.00
  C00003418 | AIR CHARTER TEAM INC                                                                      |    9461.00
  C00003418 | EXECUTIVE TRANSPORTATION                                                                  |    5290.00
@@ -1238,11 +1238,11 @@
  C00027466 | STRATEGIC MEDIA PLACEMENT                                                                 |  565984.00
  C00027466 | STRATEGIC MEDIA PLACEMENT                                                                 | 1036417.00
  C00027466 | SULLIVAN FOR US SENATE                                                                    |   45400.00
+ C00027466 | TARGETED VICTORY                                                                          |   40000.00
  C00027466 | TARGET ENTERPRISES                                                                        |   92288.00
  C00027466 | TARGET ENTERPRISES                                                                        |  350520.00
  C00027466 | TARGET ENTERPRISES                                                                        |  553412.00
  C00027466 | TARGET ENTERPRISES                                                                        |  645700.00
- C00027466 | TARGETED VICTORY                                                                          |   40000.00
  C00027466 | TERRI LYNN LAND FOR SENATE                                                                |   20400.00
  C00029447 | ALLSTAR COACHES,                                                                          |    8260.00
  C00029447 | ALLSTAR COACHES,                                                                          |    8260.00
@@ -1299,9 +1299,6 @@
  C00042366 | BENZING, SARAH                                                                            |   17500.00
  C00042366 | BUYING TIME, LLC                                                                          |  215000.00
  C00042366 | DEMOCRATIC NATIONAL                                                                       |   13000.00
- C00042366 | DIXON, MONICA                                                                             |    7500.00
- C00042366 | DIXON, MONICA                                                                             |    7500.00
- C00042366 | DIXON, MONICA                                                                             |    7500.00
  C00042366 | DIXON/DAVIS MEDIA GROUP LLC                                                               |   15011.00
  C00042366 | DIXON/DAVIS MEDIA GROUP LLC                                                               |   15011.00
  C00042366 | DIXON/DAVIS MEDIA GROUP LLC                                                               |   16764.00
@@ -1309,6 +1306,9 @@
  C00042366 | DIXON/DAVIS MEDIA GROUP LLC                                                               |   19876.00
  C00042366 | DIXON/DAVIS MEDIA GROUP LLC                                                               |   19918.00
  C00042366 | DIXON/DAVIS MEDIA GROUP LLC                                                               |   21520.00
+ C00042366 | DIXON, MONICA                                                                             |    7500.00
+ C00042366 | DIXON, MONICA                                                                             |    7500.00
+ C00042366 | DIXON, MONICA                                                                             |    7500.00
  C00042366 | GREAT AMERICAN MEDIA                                                                      |    9508.00
  C00042366 | GREAT AMERICAN MEDIA                                                                      |    9508.00
  C00042366 | GREAT AMERICAN MEDIA                                                                      |   11860.00
@@ -1420,8 +1420,8 @@
  C00042366 | HART RESEARCH ASSOCIATES                                                                  |   26000.00
  C00042366 | HART RESEARCH ASSOCIATES                                                                  |   31000.00
  C00042366 | KILEY & COMPANY                                                                           |   37000.00
- C00042366 | MARK PRYOR FOR U.S. SENATE                                                                |   45400.00
  C00042366 | MARKEY FOR SENATE                                                                         |   45400.00
+ C00042366 | MARK PRYOR FOR U.S. SENATE                                                                |   45400.00
  C00042366 | MCKENNA PIHLAJA                                                                           |    9000.00
  C00042366 | MCKENNA PIHLAJA                                                                           |    9000.00
  C00042366 | MCKENNA PIHLAJA                                                                           |    9980.00
@@ -1831,7 +1831,6 @@
  C00075820 | JAMESTOWN ASSOCIATES                                                                      |   93904.00
  C00075820 | JOURNAL COMMUNICATIONS INC                                                                |   16796.00
  C00075820 | LITTLEFILED CONSULTING                                                                    |   94000.00
- C00075820 | M STREET INSIGHT                                                                          |    7500.00
  C00075820 | MCCARTHY HENNINGS WHALEN INC.                                                             |    5885.00
  C00075820 | MCCARTHY HENNINGS WHALEN INC.                                                             |    6292.00
  C00075820 | MCCARTHY HENNINGS WHALEN INC.                                                             |   10973.00
@@ -1861,6 +1860,7 @@
  C00075820 | MENTZER MEDIA SERVICES INC                                                                |   75000.00
  C00075820 | MENTZER MEDIA SERVICES INC                                                                |   94000.00
  C00075820 | MOONEY MARKETING GROUP LLC                                                                |   84995.00
+ C00075820 | M STREET INSIGHT                                                                          |    7500.00
  C00075820 | NATIONAL MEDIA RESEARCH PLANNING & PLACEMENT LLC                                          |    8068.00
  C00075820 | NATIONAL MEDIA RESEARCH PLANNING & PLACEMENT LLC                                          |   10001.00
  C00075820 | NATIONAL MEDIA RESEARCH PLANNING & PLACEMENT LLC                                          |   10001.00
@@ -2469,8 +2469,8 @@
  C00141572 | GATEWAY COMMUNICATIONS, INC                                                               |   46454.00
  C00141572 | KPDQ-FM                                                                                   |   13053.00
  C00141572 | RESONATE                                                                                  |   50000.00
- C00141812 | AMS Communications                                                                        |   25452.00
  C00141812 | Adelstein-Liston                                                                          |   10000.00
+ C00141812 | AMS Communications                                                                        |   25452.00
  C00141812 | Main Street Communications                                                                |    8625.00
  C00143743 | Aristeia Group, Inc.                                                                      |   26162.00
  C00143743 | FP1 Strategies LLC                                                                        |   10000.00
@@ -2533,10 +2533,10 @@
  C00191247 | Buying Time, LLC                                                                          |   52563.00
  C00191247 | Buying Time, LLC                                                                          |   72437.00
  C00191247 | DS POLITICAL                                                                              |    7300.00
- C00191247 | LEILA WISE AND ASSOCIATES                                                                 |   15000.00
- C00191247 | LEILA WISE AND ASSOCIATES                                                                 |   54000.00
  C00191247 | Leila Wise and Associates                                                                 |   10000.00
  C00191247 | Leila Wise and Associates                                                                 |   10492.00
+ C00191247 | LEILA WISE AND ASSOCIATES                                                                 |   15000.00
+ C00191247 | LEILA WISE AND ASSOCIATES                                                                 |   54000.00
  C00196246 | BUYING TIME, LLC                                                                          |    9000.00
  C00196246 | BUYING TIME, LLC                                                                          |   21000.00
  C00196246 | BUYING TIME, LLC                                                                          |   25000.00
@@ -3126,10 +3126,10 @@
  C00473918 | SCREEN STRATEGIES MEDIA                                                                   |   22500.00
  C00473918 | SCREEN STRATEGIES MEDIA                                                                   |   79555.00
  C00473918 | SCREEN STRATEGIES MEDIA                                                                   |  323778.00
- C00473918 | SKD KNICKERBOCKER                                                                         |    6111.00
- C00473918 | SKD KNICKERBOCKER                                                                         |   37991.00
  C00473918 | SKDKNICKERBOCKER                                                                          |   34186.00
  C00473918 | SKDKNICKERBOCKER                                                                          |   44719.00
+ C00473918 | SKD KNICKERBOCKER                                                                         |    6111.00
+ C00473918 | SKD KNICKERBOCKER                                                                         |   37991.00
  C00473918 | THE NEW MEDIA FIRM                                                                        |   22000.00
  C00473918 | THE NEW MEDIA FIRM                                                                        |   25407.00
  C00473918 | THE NEW MEDIA FIRM                                                                        |   40877.00
@@ -4007,10 +4007,10 @@
  C00489799 | SCREEN STRATEGIES MEDIA                                                                   |   99938.00
  C00489799 | SCREEN STRATEGIES MEDIA                                                                   |  139650.00
  C00489799 | SCREEN STRATEGIES MEDIA                                                                   |  299815.00
- C00489799 | STONE'S PHONES, INC.                                                                      |    9825.00
- C00489799 | STONE'S PHONES, INC.                                                                      |    9825.00
  C00489799 | STONES' PHONES                                                                            |   31409.00
  C00489799 | STONES' PHONES                                                                            |   31409.00
+ C00489799 | STONE'S PHONES, INC.                                                                      |    9825.00
+ C00489799 | STONE'S PHONES, INC.                                                                      |    9825.00
  C00489799 | SWAY                                                                                      |   26392.00
  C00489799 | SWAY                                                                                      |   57839.00
  C00489799 | SWAY                                                                                      |   57839.00
@@ -4891,9 +4891,9 @@
  C00497412 | JAMESON MEDIA                                                                             |    6000.00
  C00497412 | JAMESON MEDIA                                                                             |    6000.00
  C00497412 | JAMESON MEDIA                                                                             |    6000.00
+ C00497412 | ONMEDIA                                                                                   |    8419.00
  C00497412 | ON MEDIA                                                                                  |    8454.00
  C00497412 | ON MEDIA                                                                                  |   10455.00
- C00497412 | ONMEDIA                                                                                   |    8419.00
  C00497412 | RENO PRINT STORE                                                                          |   23012.00
  C00497412 | RENO PRINT STORE                                                                          |   24067.00
  C00497412 | WT & S CONSULTING                                                                         |   19000.00
@@ -5504,11 +5504,11 @@
  C00530766 | LITTLE ROCK TOURS                                                                         |    7200.00
  C00530766 | MAURICE BRANSFIELD                                                                        |    6038.00
  C00530766 | ORBITZ                                                                                    |   12145.00
- C00530766 | POUND FEINSTEIN & ASSOCIATES                                                              |   10658.00
- C00530766 | POUND FEINSTEIN & ASSOCIATES                                                              |   21718.00
  C00530766 | POUND FEINSTEIN AND ASSOCIATES                                                            |    9486.00
  C00530766 | POUND FEINSTEIN AND ASSOCIATES                                                            |    9551.00
  C00530766 | POUND FEINSTEIN AND ASSOCIATES                                                            |   10203.00
+ C00530766 | POUND FEINSTEIN & ASSOCIATES                                                              |   10658.00
+ C00530766 | POUND FEINSTEIN & ASSOCIATES                                                              |   21718.00
  C00530766 | POUND, FEINSTEIN & ASSOCIATES                                                             |    6041.00
  C00530766 | POUND, FEINSTEIN & ASSOCIATES                                                             |    6041.00
  C00530766 | POUND, FEINSTEIN & ASSOCIATES                                                             |    6451.00
@@ -5855,10 +5855,10 @@
  C00542779 | TIGERCOMM                                                                                 |    9600.00
  C00542779 | WINNING CONNECTIONS, INC.                                                                 |   55000.00
  C00542803 | BOSTON PRODUCTIONS, INC.                                                                  |    5800.00
- C00542803 | MULTI MEDIA SERVICES, INC.                                                                |   10000.00
  C00542803 | MULTIMEDIA, INC.                                                                          |   10000.00
  C00542803 | MULTIMEDIA, INC.                                                                          |   24000.00
  C00542803 | MULTIMEDIA, INC.                                                                          |   25000.00
+ C00542803 | MULTI MEDIA SERVICES, INC.                                                                |   10000.00
  C00543140 | BOSTON GLOBE                                                                              |   22724.00
  C00543140 | CAMBRIDGE OFFSET PRINTING                                                                 |   20315.00
  C00543140 | CATALIST, LLC                                                                             |   11080.00
@@ -6603,8 +6603,8 @@
  C00560763 | NMB RESEARCH LLC                                                                          |   14000.00
  C00560763 | RED OCTOBER PRODUCTIONS                                                                   |   20278.00
  C00560763 | RED OCTOBER PRODUCTIONS, INC.                                                             |   20928.00
- C00560763 | STRATEGIC PARTNERS & MEDIA                                                                |    5500.00
  C00560763 | STRATEGIC PARTNERS MEDIA                                                                  |   15000.00
+ C00560763 | STRATEGIC PARTNERS & MEDIA                                                                |    5500.00
  C00560771 | ADDRESS N MAIL INC                                                                        |   16290.00
  C00560771 | CLEAR CHANNEL OUTDOOR                                                                     |    9450.00
  C00560771 | CUMULUS MEDIA LLC                                                                         |   57848.00
@@ -7674,8 +7674,8 @@
  C90005786 | TERRA STRATEGIES, LLC                                                                     |  235643.00
  C90005786 | TERRA STRATEGIES, LLC                                                                     |  514104.00
  C90005786 | TERRA STRATEGIES, LLC                                                                     |  514105.00
- C90005786 | TERRIS BARNES & WALTERS MEDIA                                                             |   35554.00
  C90005786 | TERRIS, BARNES & WALTERS                                                                  |   50398.00
+ C90005786 | TERRIS BARNES & WALTERS MEDIA                                                             |   35554.00
  C90005786 | THE STRATEGY GROUP, INC                                                                   |    5306.00
  C90005786 | THE STRATEGY GROUP, INC                                                                   |   48793.00
  C90005786 | THE STRATEGY GROUP, INC                                                                   |  185657.00
@@ -8242,22 +8242,6 @@
  C90013145 | INTEGRATED WEB STRATEGIES                                                                 |    7680.00
  C90013145 | INTEGRATED WEB STRATEGIES                                                                 |    7798.00
  C90013145 | OLD SCHOOL PRODUCTIONS                                                                    | 1430161.00
- C90013145 | R STREET FILMS                                                                            |   75000.00
- C90013145 | R STREET FILMS                                                                            |   75000.00
- C90013145 | R STREET FILMS                                                                            |  125000.00
- C90013145 | R STREET FILMS                                                                            |  125000.00
- C90013145 | R STREET FILMS                                                                            |  150000.00
- C90013145 | R STREET FILMS                                                                            |  150000.00
- C90013145 | R STREET FILMS                                                                            |  150000.00
- C90013145 | R STREET FILMS                                                                            |  150000.00
- C90013145 | R STREET FILMS                                                                            |  175000.00
- C90013145 | R STREET FILMS                                                                            |  300000.00
- C90013145 | R STREET FILMS                                                                            |  300000.00
- C90013145 | R STREET FILMS                                                                            |  300000.00
- C90013145 | R STREET FILMS                                                                            |  300000.00
- C90013145 | R STREET FILMS                                                                            |  350000.00
- C90013145 | R STREET FILMS                                                                            |  350000.00
- C90013145 | R STREET FILMS                                                                            |  500000.00
  C90013145 | REVOLUTION AGENCY                                                                         |    7928.00
  C90013145 | REVOLUTION AGENCY                                                                         |    8078.00
  C90013145 | REVOLUTION AGENCY                                                                         |   23082.00
@@ -8293,6 +8277,22 @@
  C90013145 | REVOLUTION MEDIA                                                                          |   18500.00
  C90013145 | REVOLUTION MEDIA                                                                          |  140000.00
  C90013145 | REVOLUTION MEDIA                                                                          |  181500.00
+ C90013145 | R STREET FILMS                                                                            |   75000.00
+ C90013145 | R STREET FILMS                                                                            |   75000.00
+ C90013145 | R STREET FILMS                                                                            |  125000.00
+ C90013145 | R STREET FILMS                                                                            |  125000.00
+ C90013145 | R STREET FILMS                                                                            |  150000.00
+ C90013145 | R STREET FILMS                                                                            |  150000.00
+ C90013145 | R STREET FILMS                                                                            |  150000.00
+ C90013145 | R STREET FILMS                                                                            |  150000.00
+ C90013145 | R STREET FILMS                                                                            |  175000.00
+ C90013145 | R STREET FILMS                                                                            |  300000.00
+ C90013145 | R STREET FILMS                                                                            |  300000.00
+ C90013145 | R STREET FILMS                                                                            |  300000.00
+ C90013145 | R STREET FILMS                                                                            |  300000.00
+ C90013145 | R STREET FILMS                                                                            |  350000.00
+ C90013145 | R STREET FILMS                                                                            |  350000.00
+ C90013145 | R STREET FILMS                                                                            |  500000.00
  C90013145 | SOMETHING ELSE STRATEGIES                                                                 |  177000.00
  C90013145 | SOMETHING ELSE STRATEGIES                                                                 |  300000.00
  C90013145 | SOMETHING ELSE STRATEGIES                                                                 |  300000.00

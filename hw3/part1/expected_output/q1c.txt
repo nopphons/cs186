@@ -1,15 +1,15 @@
     id     |                                           name                                            |       avg_amount       
 -----------+-------------------------------------------------------------------------------------------+------------------------
+ C00000935 | Adelstein,Liston, LLC                                                                     |     86900.000000000000
  C00000935 | ADELSTEIN,LISTON, LLC                                                                     |     15849.219512195122
  C00000935 | AKPD MESSAGE AND MEDIA, LLC                                                               |     12100.466666666667
- C00000935 | Adelstein,Liston, LLC                                                                     |     86900.000000000000
  C00000935 | Angerholzer Broz Consulting, LLC                                                          |  6124.0000000000000000
  C00000935 | Anzalone Liszt Research, Inc.                                                             | 10000.0000000000000000
- C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |     16945.929347826087
  C00000935 | BlueWest Media                                                                            |     81300.000000000000
+ C00000935 | BULLY PULPIT INTERACTIVE, LLC                                                             |     16945.929347826087
  C00000935 | Buying Time, LLC                                                                          |     83900.000000000000
- C00000935 | CONVERSANT, INC.                                                                          |     35000.000000000000
  C00000935 | Canal Partners Media, LLC                                                                 |     86732.200000000000
+ C00000935 | CONVERSANT, INC.                                                                          |     35000.000000000000
  C00000935 | DAVID DIXON MEDIA GROUP                                                                   |     14473.250000000000
  C00000935 | DIXON DAVIS MEDIA GROUP                                                                   |     16024.933333333333
  C00000935 | ENVISION COMMUNICATIONS, INC.                                                             |  8220.8333333333333333
@@ -17,26 +17,26 @@
  C00000935 | GREAT AMERICAN MEDIA                                                                      |    196187.556962025316
  C00000935 | Gum Spirits Productions DBA CD2 Consul                                                    |     85900.000000000000
  C00000935 | Joe Trippi & Associates, Inc                                                              |     86900.000000000000
- C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |     12037.923076923077
  C00000935 | Main Street Communications LLC                                                            |     79900.000000000000
  C00000935 | Mundy Katowitz Media, Inc                                                                 |     86900.000000000000
+ C00000935 | MURPHY VOGEL ASKEW REILLY, LLC                                                            |     12037.923076923077
  C00000935 | New Partners Teleservices                                                                 |  6993.0000000000000000
  C00000935 | OSSEN CARDENAS MEDIA, INC.                                                                |     16467.500000000000
  C00000935 | PRISM COMMUNICATIONS, INC.                                                                |     12543.950000000000
  C00000935 | RALSTON LAPP MEDIA, LLC                                                                   |     11513.960000000000
  C00000935 | RALSTON LAPP MEDIA, LLC JOHN LAPP                                                         |     12106.000000000000
+ C00000935 | Screen Strategies Media, LLC                                                              |     83260.000000000000
  C00000935 | SHORR HOLDING COMPANY                                                                     | 10034.0000000000000000
  C00000935 | SHORR HOLDING COMPANY SHORR JOHNSON MAGNUS                                                |     10721.263157894737
  C00000935 | SKDKnickerbocker LLC                                                                      |     82979.500000000000
- C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            | 10828.3333333333333333
- C00000935 | Screen Strategies Media, LLC                                                              |     83260.000000000000
  C00000935 | Snyder Pickerill Media  Group, LLC                                                        |     47199.500000000000
- C00000935 | THE PIVOT GROUP, INC.                                                                     |  9411.4000000000000000
- C00000935 | THREE POINT MEDIA, LLC                                                                    |     11592.666666666667
+ C00000935 | SWITCHBOARD COMMUNICATIONS LLC                                                            | 10828.3333333333333333
  C00000935 | The Mellman Group                                                                         |     16380.000000000000
+ C00000935 | THE PIVOT GROUP, INC.                                                                     |  9411.4000000000000000
  C00000935 | The Sexton Group Public Affairs, LLC                                                      |  6734.3333333333333333
- C00000935 | VALUECLICK, INC DBA DOTOMI                                                                | 10714.0000000000000000
+ C00000935 | THREE POINT MEDIA, LLC                                                                    |     11592.666666666667
  C00000935 | VALUECLICK, INC.                                                                          | 16428.0000000000000000
+ C00000935 | VALUECLICK, INC DBA DOTOMI                                                                | 10714.0000000000000000
  C00002840 | BUDGET SIGNS & SPECIALTIES                                                                |  6971.0000000000000000
  C00003418 | AIR CHARTER TEAM INC                                                                      |  9461.0000000000000000
  C00003418 | EXECUTIVE TRANSPORTATION                                                                  |  5290.0000000000000000
@@ -141,8 +141,8 @@
  C00027466 | SRCP MEDIA, INC                                                                           |    244224.000000000000
  C00027466 | STRATEGIC MEDIA PLACEMENT                                                                 |    431913.777777777778
  C00027466 | SULLIVAN FOR US SENATE                                                                    |     45400.000000000000
- C00027466 | TARGET ENTERPRISES                                                                        |    410480.000000000000
  C00027466 | TARGETED VICTORY                                                                          |     40000.000000000000
+ C00027466 | TARGET ENTERPRISES                                                                        |    410480.000000000000
  C00027466 | TERRI LYNN LAND FOR SENATE                                                                |     20400.000000000000
  C00029447 | ALLSTAR COACHES,                                                                          |     16897.000000000000
  C00029447 | E-18 MEDIA                                                                                |  9250.0000000000000000
@@ -174,16 +174,16 @@
  C00042366 | BENZING, SARAH                                                                            | 17500.0000000000000000
  C00042366 | BUYING TIME, LLC                                                                          |    215000.000000000000
  C00042366 | DEMOCRATIC NATIONAL                                                                       | 13000.0000000000000000
- C00042366 | DIXON, MONICA                                                                             |  7500.0000000000000000
  C00042366 | DIXON/DAVIS MEDIA GROUP LLC                                                               |     17837.714285714286
+ C00042366 | DIXON, MONICA                                                                             |  7500.0000000000000000
  C00042366 | GREAT AMERICAN MEDIA                                                                      |    318580.020833333333
  C00042366 | GREENBERG QUINLAN ROSNER                                                                  |     34000.000000000000
  C00042366 | GRUNWALD COMMUNICATIONS                                                                   |     13924.428571428571
  C00042366 | HARSTAD STRATEGIC RESEARCH, INC.                                                          |     15464.000000000000
  C00042366 | HART RESEARCH ASSOCIATES                                                                  |     27666.666666666667
  C00042366 | KILEY & COMPANY                                                                           |     37000.000000000000
- C00042366 | MARK PRYOR FOR U.S. SENATE                                                                |     45400.000000000000
  C00042366 | MARKEY FOR SENATE                                                                         |     45400.000000000000
+ C00042366 | MARK PRYOR FOR U.S. SENATE                                                                |     45400.000000000000
  C00042366 | MCKENNA PIHLAJA                                                                           |     16528.000000000000
  C00042366 | MSR-NEXT                                                                                  |    314308.000000000000
  C00042366 | PAYROLL DATA PROCESSING                                                                   |     12185.400000000000
@@ -228,12 +228,12 @@
  C00075820 | JAMESTOWN ASSOCIATES                                                                      |     93904.000000000000
  C00075820 | JOURNAL COMMUNICATIONS INC                                                                | 16796.0000000000000000
  C00075820 | LITTLEFILED CONSULTING                                                                    |     94000.000000000000
- C00075820 | M STREET INSIGHT                                                                          |  7500.0000000000000000
  C00075820 | MCCARTHY HENNINGS WHALEN INC.                                                             |     18921.058823529412
  C00075820 | MCLAUGHLIN AND ASSOCIATES INC                                                             |     17291.666666666667
  C00075820 | MEDIA AD VENTURES INC                                                                     |     86250.000000000000
  C00075820 | MENTZER MEDIA SERVICES INC                                                                |     61839.666666666667
  C00075820 | MOONEY MARKETING GROUP LLC                                                                |     84995.000000000000
+ C00075820 | M STREET INSIGHT                                                                          |  7500.0000000000000000
  C00075820 | NATIONAL MEDIA RESEARCH PLANNING & PLACEMENT LLC                                          |    216131.146067415730
  C00075820 | NATIONAL VICTORY STRATEGIES                                                               |     90232.000000000000
  C00075820 | NORTH STAR OPINION RESEARCH INC                                                           |     13791.500000000000
@@ -298,8 +298,8 @@
  C00141572 | GATEWAY COMMUNICATIONS, INC                                                               |     25389.333333333333
  C00141572 | KPDQ-FM                                                                                   | 13053.0000000000000000
  C00141572 | RESONATE                                                                                  |     50000.000000000000
- C00141812 | AMS Communications                                                                        |     25452.000000000000
  C00141812 | Adelstein-Liston                                                                          | 10000.0000000000000000
+ C00141812 | AMS Communications                                                                        |     25452.000000000000
  C00141812 | Main Street Communications                                                                |  8625.0000000000000000
  C00143743 | Aristeia Group, Inc.                                                                      |     26162.000000000000
  C00143743 | FP1 Strategies LLC                                                                        | 10789.5000000000000000
@@ -342,8 +342,8 @@
  C00191247 | AMS Communications Inc                                                                    |  9180.0000000000000000
  C00191247 | Buying Time, LLC                                                                          |     62500.000000000000
  C00191247 | DS POLITICAL                                                                              |  7300.0000000000000000
- C00191247 | LEILA WISE AND ASSOCIATES                                                                 |     34500.000000000000
  C00191247 | Leila Wise and Associates                                                                 | 10246.0000000000000000
+ C00191247 | LEILA WISE AND ASSOCIATES                                                                 |     34500.000000000000
  C00196246 | BUYING TIME, LLC                                                                          |     20000.000000000000
  C00196246 | LET'S GET TO WORK PRODUCTIONS LLC                                                         |     53750.000000000000
  C00196246 | MAMMEN GROUP, INC.                                                                        |     19591.500000000000
@@ -492,8 +492,8 @@
  C00473918 | MOXIE MEDIA                                                                               |     16536.941176470588
  C00473918 | PIVOT GROUP                                                                               |     18488.055555555556
  C00473918 | SCREEN STRATEGIES MEDIA                                                                   |     90376.600000000000
- C00473918 | SKD KNICKERBOCKER                                                                         |     22051.000000000000
  C00473918 | SKDKNICKERBOCKER                                                                          |     39452.500000000000
+ C00473918 | SKD KNICKERBOCKER                                                                         |     22051.000000000000
  C00473918 | THE NEW MEDIA FIRM                                                                        |     82427.285714285714
  C00473918 | THE PIVOT GROUP                                                                           |     36450.312500000000
  C00473918 | THE STRATEGY GROUP                                                                        |     42454.142857142857
@@ -626,8 +626,8 @@
  C00489799 | PLANNED PARENTHOOD VOTES NORTHWEST                                                        |  5750.0000000000000000
  C00489799 | RISING TIDE INTERACTIVE                                                                   |  9638.0000000000000000
  C00489799 | SCREEN STRATEGIES MEDIA                                                                   |    138225.750000000000
- C00489799 | STONE'S PHONES, INC.                                                                      |  9825.0000000000000000
  C00489799 | STONES' PHONES                                                                            |     31409.000000000000
+ C00489799 | STONE'S PHONES, INC.                                                                      |  9825.0000000000000000
  C00489799 | SWAY                                                                                      |     50642.500000000000
  C00489799 | THE DENVER POST                                                                           | 10507.5000000000000000
  C00489799 | THE FELDMAN GROUP INC.                                                                    |     15499.500000000000
@@ -735,8 +735,8 @@
  C00496406 | SOUTH DAKOTA NEWSPAPER SERVICES INC                                                       |     31202.500000000000
  C00496505 | GROUND GAME STRATEGIES                                                                    |  6193.0000000000000000
  C00497412 | JAMESON MEDIA                                                                             |  6000.0000000000000000
- C00497412 | ON MEDIA                                                                                  |  9454.5000000000000000
  C00497412 | ONMEDIA                                                                                   |  8419.0000000000000000
+ C00497412 | ON MEDIA                                                                                  |  9454.5000000000000000
  C00497412 | RENO PRINT STORE                                                                          |     23539.500000000000
  C00497412 | WT & S CONSULTING                                                                         | 19000.0000000000000000
  C00498832 | TARGET ENTERPRISES                                                                        |    349293.333333333333
@@ -889,8 +889,8 @@
  C00530766 | LITTLE ROCK TOURS                                                                         |  7200.0000000000000000
  C00530766 | MAURICE BRANSFIELD                                                                        |  6038.0000000000000000
  C00530766 | ORBITZ                                                                                    | 12145.0000000000000000
- C00530766 | POUND FEINSTEIN & ASSOCIATES                                                              |     16188.000000000000
  C00530766 | POUND FEINSTEIN AND ASSOCIATES                                                            |  9746.6666666666666667
+ C00530766 | POUND FEINSTEIN & ASSOCIATES                                                              |     16188.000000000000
  C00530766 | POUND, FEINSTEIN & ASSOCIATES                                                             |     11983.142857142857
  C00530766 | RESIDENCE INN                                                                             | 13133.0000000000000000
  C00530766 | STRATEGIC MEDIA SERVICES                                                                  |    379839.000000000000
@@ -973,8 +973,8 @@
  C00542779 | TIGERCOMM                                                                                 |  8219.6363636363636364
  C00542779 | WINNING CONNECTIONS, INC.                                                                 |     55000.000000000000
  C00542803 | BOSTON PRODUCTIONS, INC.                                                                  |  5800.0000000000000000
- C00542803 | MULTI MEDIA SERVICES, INC.                                                                | 10000.0000000000000000
  C00542803 | MULTIMEDIA, INC.                                                                          |     19666.666666666667
+ C00542803 | MULTI MEDIA SERVICES, INC.                                                                | 10000.0000000000000000
  C00543140 | BOSTON GLOBE                                                                              |     22724.000000000000
  C00543140 | CAMBRIDGE OFFSET PRINTING                                                                 |     20315.000000000000
  C00543140 | CATALIST, LLC                                                                             | 11080.0000000000000000
@@ -1183,8 +1183,8 @@
  C00560763 | NMB RESEARCH LLC                                                                          | 14000.0000000000000000
  C00560763 | RED OCTOBER PRODUCTIONS                                                                   |     20278.000000000000
  C00560763 | RED OCTOBER PRODUCTIONS, INC.                                                             |     20928.000000000000
- C00560763 | STRATEGIC PARTNERS & MEDIA                                                                |  5500.0000000000000000
  C00560763 | STRATEGIC PARTNERS MEDIA                                                                  | 15000.0000000000000000
+ C00560763 | STRATEGIC PARTNERS & MEDIA                                                                |  5500.0000000000000000
  C00560771 | ADDRESS N MAIL INC                                                                        | 16290.0000000000000000
  C00560771 | CLEAR CHANNEL OUTDOOR                                                                     |  9450.0000000000000000
  C00560771 | CUMULUS MEDIA LLC                                                                         |     57848.000000000000
@@ -1444,8 +1444,8 @@
  C90005786 | PRINTEX                                                                                   |  5889.0000000000000000
  C90005786 | RALSTON LAPP MEDIA                                                                        |     15532.000000000000
  C90005786 | TERRA STRATEGIES, LLC                                                                     |    269803.400000000000
- C90005786 | TERRIS BARNES & WALTERS MEDIA                                                             |     35554.000000000000
  C90005786 | TERRIS, BARNES & WALTERS                                                                  |     50398.000000000000
+ C90005786 | TERRIS BARNES & WALTERS MEDIA                                                             |     35554.000000000000
  C90005786 | THE STRATEGY GROUP, INC                                                                   |    256667.500000000000
  C90005786 | TIGHTLINE STRATEGIES                                                                      | 10814.0000000000000000
  C90005786 | WATERFRONT STRATEGIES                                                                     |    257022.000000000000
@@ -1577,9 +1577,9 @@
  C90013145 | FABRIZIO, LEE & ASSOCIATES, INC.                                                          | 12650.0000000000000000
  C90013145 | INTEGRATED WEB STRATEGIES                                                                 |  7739.0000000000000000
  C90013145 | OLD SCHOOL PRODUCTIONS                                                                    |   1430161.000000000000
- C90013145 | R STREET FILMS                                                                            |    223437.500000000000
  C90013145 | REVOLUTION AGENCY                                                                         |    253223.612903225806
  C90013145 | REVOLUTION MEDIA                                                                          |     87500.000000000000
+ C90013145 | R STREET FILMS                                                                            |    223437.500000000000
  C90013145 | SOMETHING ELSE STRATEGIES                                                                 |    545833.333333333333
  C90013145 | TARGETED VICTORY                                                                          |     50000.000000000000
  C90013236 | ADVANTAGE, INC.                                                                           | 11566.6666666666666667

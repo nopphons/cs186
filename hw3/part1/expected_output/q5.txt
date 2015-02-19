@@ -6,17 +6,17 @@
  ALASKA DEMOCRATIC PARTY                                                                  |             5000.00
  ALEX SINK FOR CONGRESS                                                                   |              450.00
  ALLIANCE FOR A BETTER MINNESOTA FEDERAL PAC                                              |            70575.00
- AMERICA VOTES ACTION FUND                                                                |           605000.00
  AMERICAN BRIDGE 21ST CENTURY                                                             |           660000.00
  AMERICAN CROSSROADS                                                                      |           644000.00
  AMERICAN DEFENSE AND MILITARY PAC (ADAM PAC)                                             |             5000.00
  AMERICAN DENTAL ASSOCIATION INDEPENDENT EXPENDITURES COMMITTEE                           |           297000.00
  AMERICAN FUTURE FUND POLITICAL ACTION                                                    |           325000.00
  AMERICAN HEARTLAND PAC                                                                   |             5000.00
- AMERICAN UNITY PAC INC                                                                   |            50000.00
  AMERICANS FOR GROWTH, OPPORTUNITY AND PROSPERITY, INC.                                   |             7326.00
  AMERICANS FOR LIBERTY PAC                                                                |              486.00
  AMERICANS FOR RESPONSIBLE SOLUTIONS-PAC                                                  |            65018.00
+ AMERICAN UNITY PAC INC                                                                   |            50000.00
+ AMERICA VOTES ACTION FUND                                                                |           605000.00
  AMERIPAC: THE FUND FOR A GREATER AMERICA                                                 |           535620.00
  AMI BERA FOR CONGRESS                                                                    |             1500.00
  ANN CLEMMER FOR CONGRESS                                                                 |             3000.00
@@ -34,8 +34,8 @@
  BUILD AMERICA PAC                                                                        |              500.00
  CAIN FOR CONGRESS                                                                        |             3100.00
  CAMPAIGN FOR JOBS AND OPPORTUNITY                                                        |            21000.00
- CARL SCIORTINO COMMITTEE                                                                 |             4100.00
  CARLOS CURBELO CONGRESS                                                                  |             8000.00
+ CARL SCIORTINO COMMITTEE                                                                 |             4100.00
  CAROL SHEA-PORTER FOR CONGRESS                                                           |              250.00
  CASTRO FOR CONGRESS                                                                      |             1250.00
  CENTER FORWARD COMMITTEE                                                                 |           200000.00
@@ -53,8 +53,8 @@
  CONSERVATIVE OPPORTUNITIES FOR A NEW AMERICA PAC                                         |             2500.00
  CONSERVATIVE VICTORY PROJECT                                                             |            19227.00
  CONSTITUTIONAL RIGHTS PAC                                                                |              948.00
- COOPER FOR CONGRESS                                                                      |             -500.00
  COOPERATIVE OF AMERICAN PHYSICIANS IE COMMITTEE                                          |            34000.00
+ COOPER FOR CONGRESS                                                                      |             -500.00
  CRA LEADERSHIP PAC                                                                       |            14165.00
  DAVIS FOR CONGRESS/FRIENDS OF DAVIS                                                      |             1500.00
  DAWG PAC - DEMOCRATS AGAINST WASTE IN GOVERNMENT                                         |             5000.00
@@ -149,16 +149,16 @@
  PLANNED PARENTHOOD VOTES                                                                 |            27000.00
  PRINCIPLED LEADERSHIP FUND                                                               |              250.00
  PRIORITIES FOR IOWA POLITICAL FUND                                                       |            25000.00
- PROGRESSIVE USA VOTERS                                                                   |            46500.00
  PROGRESSIVES UNITED POLITICAL ACTION COMMITTEE                                           |              250.00
+ PROGRESSIVE USA VOTERS                                                                   |            46500.00
  PROJECTXXACT                                                                             |              250.00
  PROLIANCE SURGEONS POLITICAL ACTION COMMITTE                                             |             5000.00
  PROTECTING CHOICE IN CALIFORNIA A PROJECT OF PLANNED PARENTHOOD AFFILIATES OF CALIFORNIA |           192705.00
  PUT ALASKA FIRST                                                                         |         10083500.00
- R MAJORITY PAC                                                                           |            50000.00
  READY FOR HILLARY PAC                                                                    |            73000.00
  RECCHIA FOR CONGRESS                                                                     |              333.00
  RESTORE OUR REPUBLIC                                                                     |             7500.00
+ R MAJORITY PAC                                                                           |            50000.00
  SCOTT PETERS FOR CONGRESS                                                                |              500.00
  SEAN PATRICK MALONEY FOR CONGRESS                                                        |             1000.00
  SENATE CONSERVATIVES ACTION                                                              |           288579.00
