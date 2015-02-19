@@ -107,9 +107,9 @@ Create views in the following queries:
 
 3. Find the names of all committees which have *not* made a contribution to Barack Obama.
 
-4. Find the names of candidates have received contributions from more than 10% of all committees.
+4. Find the names of candidates have received contributions from more than **1%** of all committees.
 
-5. For each committee, list the total amount of donations they got from individuals that are Political Action Committees.  If they got no such donations, the total should be listed as null.
+5. For each committee, list the total amount of dollars donated from individuals that are Political Action Committees.  If they got no such donations, the total should be listed as null.
 
 6. Find the ids of candidates who have received contributions from both PAC and CCM entities.
 
