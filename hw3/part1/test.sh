@@ -6,7 +6,7 @@ mkdir your_output 2>/dev/null
 rm -rf diffs 2> /dev/null
 mkdir diffs 2> /dev/null
 
-psql fec < part1.sql &> /dev/null
+psql -q fec < part1.sql
 
 pass=true
 
