@@ -25,6 +25,23 @@ These tables come from the Federal Election Commission (FEC) and contain finance
 
 We **strongly** encourage you to consult the following page to better understand the dataset: http://www.fec.gov/finance/disclosure/ftpdet.shtml. For each table we've given you the FEC provides a "Data Dictionary" which explains what each of the fields contains. You'll likely need to consult both of these resources throughout this part of the homework.
 
+#### Some clarifications on the dataset
+The way this dataset organizes who a contribution came from and where it is going can be a little confusing. We'll use the following interpretation:
+
+In the `individual contributions` table:
+ * `cmte_id`: who the donation goes to
+ * `other_id`: mostly null for this table. only used if the donation came from another committee
+ * `name`: name of the individual donating
+
+In the `intercomittee contributions` table:
+ * `cmte_id`: who the donation goes to
+ * `other_id`: who the donation came from
+
+In the `committee_contributions` table:
+ * `cand_id`: if the donation is to a candidate, the candidate's id
+ * `cmte_id`: if `cand_id` is not null: the "filing committee". if `cand_id` is null: who the donation goes to
+ * `other_id`: who the donation came from
+
 ###Setting up Postgres
 
 Log in to your vagrant VM. First, we need to create a Postgres user for your vagrant account. You should only need to do this once.
@@ -109,9 +126,9 @@ Create views in the following queries:
 
 4. Find the names of candidates have received contributions from more than **1%** of all committees.
 
-5. For each committee, list the total amount of dollars donated from individuals that are Political Action Committees.  If they got no such donations, the total should be listed as null.
+5 **Updated**. For each committee, list the total amount of dollars in individual contributions from individuals that are an **organization**.  If they got no such donations, the total should be listed as null.
 
-6. Find the ids of candidates who have received contributions from both PAC and CCM entities.
+6. Find the ids of candidates who have received committee contributions from both PAC and CCM entities.
 
 7. Find the names of distinct candidate pairs that share a common committee contributor from the state of Rhode Island (RI). If you list a pair ("Washington", "Lincoln") you should also list ("Lincoln, Washington").
       
