@@ -29,9 +29,9 @@ def setup(test_file):
     # `edge` additionally contains the residual edges
     db.execute("""
         INSERT INTO edge(src, dst, capacity)
-          SELECT dst, src, 0 FROM original_edge
+          SELECT dst, src, 0 FROM original_edge O
           WHERE NOT EXISTS(SELECT * FROM original_edge E 
-            WHERE E.src = dst AND E.dst = src);
+            WHERE E.src = O.dst AND E.dst = O.src);
     """)
 
     # Handy view that maps edge ids to their reversed id
