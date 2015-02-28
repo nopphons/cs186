@@ -62,22 +62,19 @@ We will grade the last commit you've pushed to `release/<assignment-name>`.
 
 ## An example: completing this assignment
 
-If you haven't already, initialize the contents of your personal repository by copying over the public course repository:
+If you are still learning how to use Git, you *must* read the short guide [Using Git](http://berkeley-cs61b.github.io/public_html/materials/guides/using-git.html) and especially the section on [Remote Repositories](http://berkeley-cs61b.github.io/public_html/materials/guides/using-git.html#f-remote-repositories).
+
+If you haven't already, first clone your personal repository from GitHub:
 
     $ cd ~
-    $ git clone https://github.com/cs186-spring15/course.git
-    $ cd course/
-    $ git remote add personal https://github.com/cs186-spring15/xx.git
-    $ git push personal master
-
-Clone your personal repository in your home directory (replace `xx` with your login letters):
-
-    $ cd ..
     $ git clone https://github.com/cs186-spring15/xx.git
+    $ cd xx/
+    $ git remote add course https://github.com/cs186-spring15/course.git
+    $ git pull course master
 
 Move into the hw0 directory in your repository and create the file `done.txt`. Register this change with a commit and push it into GitHub's servers:
 
-    $ cd xx/hw0/
+    $ cd ~/xx/hw0/
     $ touch done.txt
     $ git add done.txt
     $ git commit -m 'created homework file'
@@ -85,8 +82,7 @@ Move into the hw0 directory in your repository and create the file `done.txt`. R
 
 Occasionally we might release an update to assignment files (make sure you add the course remote as detailed above first):
 
-    $ git fetch
-    $ # merge the new changes into your working copy
+    $ git pull course master
 
 Finally, when you're satisfied with your submission, submit it
 
