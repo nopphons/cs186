@@ -1,6 +1,6 @@
 # Homework 4: Joins in Spark
 
-In this assignment you'll implement two different types of joins in [Apache Spark](http://spark.apache.org). This will require you to employ key concepts of the join algorithms that we have covered in the course in order to implement more novel joins. You will also get more practice with Scala to further cement your knowledge of the language.
+In this assignment you'll implement two different types of joins in [Apache Spark](http://spark.apache.org) -- one fairly traditional, the other a bit unusual. This will require you to employ key concepts of the join algorithms that we have covered in the course in order to implement more novel joins. You will also get more practice with Scala to further cement your knowledge of the language.
 
 This assignment is due **Friday, March 20th at 11:59 PM** and is worth **10% of your final grade**. This project is an excellent opportunity to collaborate, and we'll require that you complete it with your partners from HW2.
 
@@ -43,7 +43,8 @@ However, note that if you do make significant changes:
 is a join algorithm that was designed for one of the original
 parallel query engines, and makes effective use of streaming (non-blocking) behaviors.
 In this algorithm, you construct a hash table for _both_ sides of the join, not just
-one side as in regular hash join.
+one side as in regular hash join.  Having hashtables on both sides means that tuples can arrive
+from either input in any order, and they can be handled immediately (non-blocking!) to produce matches and be hashed for later lookups from the other input.
 
 We will be implementing a version of symmetric hash join that works as follows:
 We'll begin by considering the "left" table as the inner table of the join, and the "right" table as the "outer".
@@ -67,34 +68,49 @@ You will need to implement the `next`, `hasNext`, `switchRelations`, and `findNe
 
 At this point, you should be passing the tests in `SymmetricHashJoinSuite.scala`.
 
-## DNS Join
+## "DNS Join"
 
-Given a batch of REST calls, a typical method of handling these calls is to execute the requests *synchronously*: that is, when you make each request you wait for a response before issuing a new request.  However, waiting after each call is inefficient -- our query processor may lay idle for a long time while the REST call is being serviced. 
+The trick in this case is to treat asynch REST calls -- which are often handled via operating systems constructs like threads -- and instead handle them using join logic.  (If you follow this idea to its conclusion, you'll realize that joins can be used as the basic construct of asynchronous programming, and there's no need to think about "threads" or even "events" - just data.  See [Bloom](http://bloom-lang.org) for a full realization of this concept.)
 
-In this join, we are going to implement an algorithm similar to symmetric hash join.
+Given a batch of REST calls, a naive method of handling these calls is to execute the requests *synchronously*: that is, when you make each request you wait for a response before issuing a new request.  However, waiting after each call is inefficient -- our query processor may lay idle for a long time while the REST call is being serviced. To get more parallelism, you could fire up a thread per request, but these threads would have a lot of overhead associated with them, and programmers tend to get bugs writing parallel threaded code.
+
+Instead, we will implement this logic using a single-threaded join algorithm, an idea that was described in [this research paper](http://infolab.stanford.edu/~royg/wsqdsq.pdf).  The algorithm is similar to symmetric hash join.
 However, instead of being provided with two input relations, we are instead going to
 be using a single input relation, and doing lookups on the other data remotely -- in this case by
-*asynchronous* HTTP requests.
+*asynchronous* HTTP requests.  The join algorithm naturally captures the state that would exist in the the threads of a traditional multi-threaded approach to this problem.
 
-The dataset that we are going to focus on is reverse DNS latitude/longitude lookups.
-That is, given an IP address, we are going to try to obtain the geographical
+The dataset that we are going to focus on is reverse DNS latitude/longitude lookups, hence we will call
+this "DNS Join".  That is, given an IP address, we are going to try to obtain the geographical
 location of that IP address. For this end, we are going to use a service called
 [telize.com](telize.com), the owner of which has graciously allowed us to bang on his system.
 (Yay telize.com!)
 
 For that end, we have provided a simple library that asynchronously makes
-requests to [telize.com](telize.com) and handles the responses for you. You should read the
+requests to [telize.com](telize.com) and handles the receipt of responses for you. You should read the
 documentation and method signatures in `DNSLookup.scala` closely before jumping into
 implementing this.
 
-The algorithm will work as follows:
-We are going to maintain a bounded *request buffer* -- that is, we can only have a certain number
-of unanswered requests at a certain time. When we initialize our join algorithm, we
-start out by filling up our request buffer with tuples from the input. On a call to next(), you should take all
-the responses we have received so far and materialize the results of the join with those
-responses and return those responses, until you run out of them. You then materialize
-the next batch of joined responses until there are no more input tuples, there are no
-outstanding requests, and there are no remaining materialized rows.
+The implementation is going to look a lot like symmetric hash join.  We will have two hashtables.  There will be one hashtable containing tuples from the input, which will serve as a *request buffer*: it will remember
+the tuples for which there are outstanding DNSlookup requests that have not completed.  There will also be a hashtable over responses from the DNSlookup service, which will serve as a local *response cache* for the DNS services: 
+it will remember request/response pairs that were made on earlier input tuples, to save doing lookups on duplicate values 
+(shades of HW2!)  
+
+The algorithm proceeds as follows.  On the ``initialize`` call, we will read a fixed number of tuples from the input.  
+For each tuple we read in, we will (a) insert it into the request buffer (hashed by IP address), and (b) pass it to DNSlookup, which will return quickly (but without a response yet!)  This serves to "prime the pump": the system has 
+started working on DNS lookups for us.
+
+On each call to ``next``, we need to produce a pair of an input tuple and a response from the DNS service.  We do this as follows:
+
+1. First we check to see if there are any output tuples that were joined up already in a previous call.  If so, we return the first of those.
+2. Otherwise, we check to see if there are any responses ready from previous DNSlookups.  If so, we'll handle all of them now.  For each response tuple, we:
+    1. look in the request buffer hashtable for matching request tuples, join up the results, and prepare the results to be return values from  ``next``
+    2. *delete* the request tuples we found from the request buffer hashtable.  (This is different from symmetric hash join -- convince yourself that this works!)
+    3. for each request tuple that we delete, we fetch a tuple from the input -- this keeps the request buffer size steady. (If we have handled all the input tuples, simply skip this step, and continue handling responses).  For each of the request tuples we:
+        1. First look in the response cache hashtable to see if there's a match.  If there is, pair up the input tuple with the cached result and prepare it to be a return value from `next`.  Fetch another tuple from the input since this one did not make it into the request buffer.
+        2. If there is no match in the response cache, then insert this tuple into the request buffer hashtable, and pass it to DNSlookup, which will return quickly (but without a response again).
+
+In principle, it's safe to delete ("evict") tuples from the response cache hashtable -- this affects performance but not correctness.  (Again, different from symmetric hash join -- convince yourself it works!)  However for this assignment, do *not* delete tuples from the response cache -- we're keeping all the responses, on the assumption that the cost of an unnecessary duplicate DNS lookup isn't worth the benefit in memory savings.  (Note that we *do* require you to delete from the request buffer hashtable appropriately, as described above.)
+
 
 We have provided you skeleton code for `DNSJoin.scala`. This file has `trait DNSJoin` which defines the DNSJoin interface that you will be implementing.
 
@@ -126,3 +142,4 @@ Our machines will e-mail you the results of the autograder within an hour. If yo
 To submit your assignment, as before, push a branch containing the commit you want us to grade to `release/hw4`. This is separate from the autograder; pushing a commit here will not trigger the autograder, and vice-versa.
 
 Good luck!
+
