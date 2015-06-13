@@ -33,6 +33,7 @@ import org.apache.spark.sql.execution.SparkPlan
  * outstanding requests, and there are no remaining materialized rows.
  *
  */
+ 
 trait DNSJoin {
   self: SparkPlan =>
 
@@ -65,15 +66,37 @@ trait DNSJoin {
    */
   def hashJoin(input: Iterator[Row]): Iterator[Row] = {
     new Iterator[Row] {
-      // IMPLEMENT ME
+      val output: JavaArrayList[JoinedRow] = new JavaArrayList[JoinedRow]
+      val count = new ConcurrentHashMap[String, Int]
+      val local_cache = new ConcurrentHashMap[String, JoinedRow]
+      val requests = new ConcurrentHashMap[Int, Row]
+      val responses = new ConcurrentHashMap[Int, Row]
+      var req_num = 0
+      for ( i <- 0 to requestBufferSize){
+        if(input.hasNext){
+          var row : Row = input.next()
+          val new_ip = leftKeyGenerator(row).getString(0)
+          if(count.containsKey(new_ip)){
+            val old_count = count.get(new_ip)
+            count.replace(new_ip, old_count+1)
+          }else{
+            requests.put(req_num, row)
+            DNSLookup.lookup(req_num, new_ip, responses, requests)
+            count.put(new_ip, 1)
+            req_num = req_num+1
+          }
+        }
+      } 
 
+      
+      
       /**
        * This method returns the next joined tuple.
        *
        * *** THIS MUST BE IMPLEMENTED FOR THE ITERATOR TRAIT ***
        */
       override def next() = {
-        // IMPLEMENT ME
+        output.remove(0)
       }
 
       /**
@@ -82,15 +105,60 @@ trait DNSJoin {
        * *** THIS MUST BE IMPLEMENTED FOR THE ITERATOR TRAIT ***
        */
       override def hasNext() = {
-        // IMPLEMENT ME
+        if (!output.isEmpty()){
+          true
+        } else { 
+          while(output.isEmpty() && !requests.isEmpty){
+            var current = responses.keys()
+            while(current.hasMoreElements()){
+              var key = current.nextElement()
+              if (requests.containsKey(key)){
+                var matched_row = responses.get(key)
+                var matched_request = requests.get(key)
+                var joined_row = new JoinedRow(matched_request, matched_row)
+                var ip = leftKeyGenerator(matched_request).getString(0)
+                local_cache.put(ip, joined_row)
+                requests.remove(key)
+                for (j <- 1 to count.get(ip)){
+                  output.add(joined_row)
+                  //println(1)
+                  //println(output)
+                }
+                count.remove(ip)
+                var found = false
+                while(input.hasNext && !found){
+                  val new_input = input.next()
+                  val new_ip = leftKeyGenerator(new_input).getString(0)
+                  if(local_cache.containsKey(new_ip)){
+                    output.add(local_cache.get(new_ip))
+                  } else{
+                    if(count.containsKey(new_ip)){
+                      val old_count = count.get(new_ip)
+                      count.replace(new_ip, old_count+1)
+                    }else{
+                      makeRequest(new_input)
+                      found = true
+                    }
+                  }
+                }
+              }
+            }
+          }
+          !output.isEmpty()
+        }
       }
 
 
       /**
        * This method takes the next element in the input iterator and makes an asynchronous request for it.
        */
-      private def makeRequest() = {
+      private def makeRequest(in: Row) = {
         // IMPLEMENT ME
+        val new_ip = leftKeyGenerator(in).getString(0)
+        requests.put(req_num, in)
+        DNSLookup.lookup(req_num, new_ip, responses, requests)
+        count.put(new_ip, 1)
+        req_num = req_num+1
       }
     }
   }

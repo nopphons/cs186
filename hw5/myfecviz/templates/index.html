@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico"> <!-- TODO -->
+
+    <title>Visualizing Federal Election Contribution Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/dashboard.css" rel="stylesheet">
+
+
+    <style>
+
+    .land {
+      fill: #E8F5E9;
+    }
+
+    .states {
+      stroke: #C8E6C9;
+    }
+
+    .main-bar{
+      fill: #F9A825;
+      stroke: #fff;
+    }
+    .bar text {
+      font-size: 6pt;
+      font-weight: lighter;
+      stroke: none;
+    }
+
+    .map-main-text {
+      fill: #888;
+      color: #888;
+      font-size: 12pt;
+    }
+    .map-sub-text {
+      fill: #4CAF50;
+      color: #4CAF50;
+      font-size: 8pt;
+    }
+    .axis path, .axis line {
+      fill: none;
+      stroke: #888;
+      shape-rendering: crispEdges;
+    }
+    .axis text {
+      fill: #888;
+      font-size: 8pt;
+    }
+
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="#">U.S. Campaign Finance Visualization</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.fec.gov/finance/disclosure/ftpdet.shtml">About the data</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4  sidebar">
+          <!-- Charts go here -->
+          <h4>Distribution of contribution size in <span id="histogram-label">the U.S.</span></h4>
+          <div id="transaction-histogram-viz"></div>
+        </div>
+        <div class="col-sm-8 col-sm-offset-4 main">
+          <h4>Contributions amounts by state across the U.S.</h4>
+          <!-- United States geo visualization goes here! -->
+          <div id="state-viz"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- D3 libraries and scripts -->
+    <script src="static/assets/js/d3.min.js"></script>
+    <script src="static/assets/js/queue.v1.min.js"></script>
+    <script src="static/assets/js/topojson.v1.min.js"></script>
+
+    <!-- User defined D3 widgets -->
+    <script src="static/js/vis/geocashmap.js"></script>
+    <script src="static/js/vis/transactionhistogram.js"></script>
+    <!-- Controller -->
+    <script src="static/js/app.js"></script>
+    <script>
+    // Dependencies needed for US Map viz
+    var dependencies = {};
+    dependencies.convertIdToStateCode = d3.map();
+    dependencies.convertStateCodeToName = d3.map();
+    dependencies.usTopoJSON = null;
+
+    // Fetch data necessary for geo vizualization
+    queue()
+      .defer(d3.json, '/static/assets/data/us.json')
+      .defer(d3.tsv, '/static/assets/data/us-state-names.tsv', function(d) {
+        // On the fly creation of state name/id mappings
+        dependencies.convertIdToStateCode.set(d.id, d.code);
+        dependencies.convertStateCodeToName.set(d.code, d.name);
+      })
+      .await(ready);
+
+    // When ready, let's instantiate our controller and visualizations
+    function ready(error, response) {
+        // Set dependencies
+        dependencies.usTopoJSON = response;
+
+        // Instantiate controller
+        var dc = new DashboardController(
+          d3.select('#state-viz'),
+          d3.select('#transaction-histogram-viz'),
+          dependencies
+        );
+
+        // Requests data from server and renders visualizations
+        dc.firstLoad();
+    };
+    </script>
+  </body>
+</html>

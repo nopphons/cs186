@@ -1,7 +1,7 @@
 SBT=build/sbt
 TEST=sql/test:testOnly
-T1=org.apache.spark.sql.execution.joins.dns.SymmetricHashJoinSuite
-T2=org.apache.spark.sql.execution.joins.dns.DNSJoinSuite
+T1=org.apache.spark.sql.execution.joins.SymmetricHashJoinSuite
+T2=org.apache.spark.sql.execution.joins.DNSJoinSuite
 
 compile:
 	$(SBT) compile

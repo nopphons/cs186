@@ -61,7 +61,14 @@ trait SymmetricHashJoin {
   protected def symmetricHashJoin(leftIter: Iterator[Row], rightIter: Iterator[Row]): Iterator[Row] = {
     new Iterator[Row] {
       /* Remember that Scala does not have any constructors. Whatever code you write here serves as a constructor. */
-      // IMPLEMENT ME
+      var inner = leftIter
+      var outer = rightIter
+      var inner_gen = leftKeyGenerator
+      var outer_gen = rightKeyGenerator
+      var inner_hash = new HashMap[Row, Row]
+      var outer_hash = new HashMap[Row, Row]
+      var matched_row : Row = Row()
+      var emp: Boolean = false
 
       /**
        * This method returns the next joined tuple.
@@ -69,7 +76,8 @@ trait SymmetricHashJoin {
        * *** THIS MUST BE IMPLEMENTED FOR THE ITERATOR TRAIT ***
        */
       override def next() = {
-        // IMPLEMENT ME
+        emp = true
+        matched_row
       }
 
       /**
@@ -78,14 +86,24 @@ trait SymmetricHashJoin {
        * *** THIS MUST BE IMPLEMENTED FOR THE ITERATOR TRAIT ***
        */
       override def hasNext() = {
-        // IMPLEMENT ME
+        if(emp){
+          findNextMatch()
+        } else{
+          true
+        }
+
       }
 
       /**
        * This method is intended to switch the inner & outer relations.
        */
       private def switchRelations() = {
-        // IMPLEMENT ME
+        val temp = inner
+        val temp_table = inner_hash
+        inner = outer
+        outer = temp
+        inner_hash = outer_hash
+        outer_hash = temp_table
       }
 
       /**
@@ -94,8 +112,34 @@ trait SymmetricHashJoin {
        * @return whether or not a match was found
        */
       def findNextMatch(): Boolean = {
-        // IMPLEMENT ME
+        if(inner.hasNext){
+          val in = inner.next()
+          inner_hash.put(inner_gen(in), in)
+          if (outer_hash.contains(outer_gen(in))){
+            val matched = outer_hash.apply(outer_gen(in))
+            matched_row = new JoinedRow(in, matched)
+            emp = false
+            return true
+          }else{
+            switchRelations()
+            return findNextMatch()
+          } 
+        } else {
+          if (outer.hasNext){
+            switchRelations()
+            return findNextMatch()
+          } else {
+            return false
+          }
+        }
       }
     }
   }
+
+
+
+
+
+
+
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="all" href="/static/assets/css/mocha.css">
+  </head>
+  <body>
+    <div id="test-body">
+      <div id="test-map"></div>
+      <div id="test-hist"></div>
+    </div>
+    <div id="mocha"></div>
+    <script src="/static/assets/js/d3.min.js"></script>
+    <script src="static/assets/js/topojson.v1.min.js"></script>
+    <script src="/static/assets/js/mocha.js"></script>
+    <script src="/static/assets/js/chai.js"></script>
+    <script src="/static/assets/js/sinon-1.14.1.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/vis/geocashmap.js"></script>
+    <script src="/static/js/vis/transactionhistogram.js"></script>
+    <!-- All necessary imports here -->
+    <script>mocha.setup('bdd')</script>
+    <script src="/static/tests/tests.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

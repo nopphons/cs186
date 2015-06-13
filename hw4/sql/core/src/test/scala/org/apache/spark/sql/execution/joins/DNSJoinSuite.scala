@@ -1,5 +1,7 @@
 package org.apache.spark.sql.execution.joins
 
+import java.util.{ArrayList => JavaArrayList}
+
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.catalyst.ScalaReflection
@@ -9,11 +11,9 @@ import org.apache.spark.sql.execution.{PhysicalRDD, SparkPlan}
 import org.apache.spark.sql.test.TestSQLContext._
 import org.scalatest.FunSuite
 
-import scala.collection.mutable.HashSet
 import scala.util.Random
 
 case class IP (ip: String)
-case class ReverseDNS
 
 class DNSJoinSuite extends FunSuite {
   val random: Random = new Random
@@ -22,14 +22,17 @@ class DNSJoinSuite extends FunSuite {
   val sqlContext = new SQLContext(sparkContext)
   val IPAttributes: Seq[Attribute] = ScalaReflection.attributesFor[IP]
 
-  var createdIPs: HashSet[IP] = new HashSet[IP]()
-
+  var createdIPs: JavaArrayList[IP] = new JavaArrayList[IP]()
+  for ( i <- 1 to 100){
+    val ip: IP = IP((random.nextInt(220) + 1) + "." + random.nextInt(256) + "." + random.nextInt(256) + "." + random.nextInt(256))
+    createdIPs.add(ip)
+    createdIPs.add(ip)
+  }
   import sqlContext.createSchemaRDD
 
   // initialize a SparkPlan that is a sequential scan over a small amount of data
-  val smallRDD1: RDD[IP] = sparkContext.parallelize((1 to 100).map(i => {
-    val ip: IP = IP(random.nextInt(256) + "." + random.nextInt(256) + "." + random.nextInt(256) + "." + random.nextInt(256))
-    createdIPs += ip
+  val smallRDD1: RDD[IP] = sparkContext.parallelize((1 to 200).map(i => {
+    val ip: IP = createdIPs.get(i-1)
     ip
   }), 1)
   val smallScan1: SparkPlan = PhysicalRDD(IPAttributes, smallRDD1)
@@ -38,9 +41,10 @@ class DNSJoinSuite extends FunSuite {
     val outputRDD = GeneralDNSJoin(IPAttributes, IPAttributes, smallScan1, smallScan1).execute()
 
     val result = outputRDD.collect
-    assert(result.length == 100)
+    assert(result.length == 200)
 
     result.foreach(x => {
+      println(x)
       val ip = IP(x.getString(0))
       assert(createdIPs contains ip)
       createdIPs remove ip

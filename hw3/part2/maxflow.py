@@ -1,4 +1,5 @@
 import argparse, psycopg2, os
+import pprint
 
 conn = psycopg2.connect(database="part2", user="vagrant")
 conn.autocommit = True
@@ -81,9 +82,11 @@ def maxflow(bfs_max_iterations=float('inf'), flow_max_iterations=float('inf')):
             # Hints: a JOIN would be helpful here. Also check the documentation to
             # see how array concatenation work in Postgres.
             db.execute("""
-                    SELECT ???
+                    SELECT DISTINCT p.path || array[e.id] AS path, p.nodes || array[e.dst] AS nodes
                     INTO tmp
-                    ???;
+                    FROM paths p INNER JOIN edge e on p.nodes[array_length(nodes,1)] = e.src
+                    WHERE e.capacity >0 AND NOT array[e.dst] <@ p.nodes
+                    ;
 
                     DROP TABLE IF EXISTS paths CASCADE;
                     ALTER TABLE tmp RENAME TO paths;
@@ -92,14 +95,16 @@ def maxflow(bfs_max_iterations=float('inf'), flow_max_iterations=float('inf')):
                         FROM paths
                         WHERE nodes[array_length(nodes,1)] = (SELECT MAX(id) FROM node);
                     """)
-
+            
             # If we've exhausted all potential paths and found nothing, we terminate
             db.execute("SELECT * FROM paths")
             if not db.fetchall():  # if the query returns nothing, then return
                 return
 
+
             db.execute("SELECT * FROM terminated_paths")
             sink_path_found = bool(db.fetchall())
+            #print sink_path_found
 
             # DO NOT EDIT
             bfs_i += 1
@@ -110,6 +115,7 @@ def maxflow(bfs_max_iterations=float('inf'), flow_max_iterations=float('inf')):
         # Choose one of the valid paths as the one to route flow
         db.execute("""CREATE VIEW chosen_route AS 
                       SELECT * FROM terminated_paths ORDER BY path LIMIT 1""")
+      
 
         # The amount of flow to route is the minimum along the path we found,
         # aka the constraining capacity
@@ -118,24 +124,32 @@ def maxflow(bfs_max_iterations=float('inf'), flow_max_iterations=float('inf')):
                 SELECT unnest(path) AS path_edge FROM chosen_route
             ),
             constraining_capacity(capacity) AS (
-                ???
+                SELECT min(e.capacity) AS capacity
+                FROM path_edges p, edge e
+                WHERE p.path_edge = e.id
             )
             SELECT path_edge AS edge_id, (SELECT * FROM constraining_capacity) as flow 
             INTO flow_to_route FROM path_edges;
-        """)
+        """)   
+     
 
         # First, compute the updated capacity of the forward and residual edges in `updates`
         # Then, update the `edges` table
         db.execute("""
             WITH updates(id, new_capacity) AS (
-                ???
+                SELECT f.edge_id as id, e.capacity - f.flow as new_capacity
+                FROM flow_to_route f, edge e
+                WHERE f.edge_id = e.id
+                UNION
+                SELECT fe.reverse_id as id, e.capacity + f.flow as new_capacity
+                FROM flow_to_route f, edge e, flip_edge fe
+                WHERE fe.reverse_id = e.id AND f.edge_id = fe.forward_id
             )
             UPDATE edge
-              SET ???
+              SET capacity = updates.new_capacity
               FROM updates
-              WHERE ???;
+              WHERE edge.id = updates.id;
             """)
-
         # DO NOT EDIT
         flow_i += 1
         if flow_i >= flow_max_iterations:
